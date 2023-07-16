@@ -1,0 +1,55 @@
+@media (max-width: 460px) {
+    #basement {
+        .basement-item:not(:first-child) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+
+    #navbar {
+        .nav-logo {
+            h2 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+
+    #navbar {
+
+        .nav-link {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 670px) {
+
+    #products {
+
+        .products__menu {
+
+            display: flex;
+            flex-direction: column;
+
+            &__search {
+
+                margin-top: 35px;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 580px) {
+
+}

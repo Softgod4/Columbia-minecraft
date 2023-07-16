@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+
+#products {
+
+    .products__menu {
+
+        &__title {
+
+            .neon-line {
+                margin-top: 5px;
+                height: 2px;
+                width: 140px;
+                border-radius: 4px;
+                background: white;
+                box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
+            }
+        }
+
+        &__search {
+            
+            .search {
+
+                p {
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                &__container {
+
+                    border-radius: 4px;
+                    border: 1px solid var(--gray-400, #5E5E5E);
+                    background: var(--gray-700, #383838);
+                    padding: 8px 15px;
+    
+                    img {
+                        margin-right: 7px;
+                    }
+    
+                    input {
+    
+                        font-size: 24px;
+                        color: white;
+                        background: var(--gray-700, #383838);
+                        border: none;
+    
+                    }
+    
+                }
+
+            }
+            
+        }
+
+    }
+
+    .products__block {
+
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 50px;
+
+        &__item {
+            max-width: 260px;
+            height: auto;
+            padding: 20px 30px;
+            border-radius: 10px;
+            background: #1D2020;
+            justify-self: center;
+            transition: all 0.5s;
+
+            &:hover {
+                box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+
+            h2 {
+                margin-bottom: 10px;
+            }
+
+            .buy-item {
+
+                margin-top: 15px;
+
+                p {
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                }
+
+                button {
+                    width: 103px;
+                    height: 40px;
+                    margin-left: 20px;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#line {
+    margin: 0px;
+    width: 100%;
+    height: 0.1px;
+    background: #141717;
+    box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
+}
+
+#server {
+
+    margin: 0px;
+    background-color: #111414;
+
+    .server__menu__title {
+
+        h2 {
+            margin-top: 100px;
+        }
+
+        .neon-line {
+            margin-top: 5px;
+            margin-bottom: 50px;
+            height: 2px;
+            width: 140px;
+            border-radius: 4px;
+            background: white;
+            box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
+        }
+    }
+}

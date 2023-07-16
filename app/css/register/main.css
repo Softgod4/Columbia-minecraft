@@ -1,0 +1,40 @@
+body {
+  background-color: #111414;
+}
+
+#register-form {
+  margin-top: 50px;
+  padding: 10px;
+  gap: 50px;
+  border-radius: 10px;
+  max-width: 90%;
+  height: 522px;
+  background-color: #1e2020;
+  min-width: 25%;
+}
+#register-form .form__up h2 {
+  white-space: nowrap;
+}
+#register-form .form__up:not(:first-child) {
+  margin-top: 50px;
+}
+#register-form .form__up form h3 {
+  margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#register-form .form__up form #form-nickname {
+  background-color: #383838;
+  border: 1.5px solid #5e5e5e;
+  height: 48px;
+  padding: 12px 20px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+}
+#register-form .form__up form input[type=button] {
+  width: 103px;
+  margin-top: 19px;
+}/*# sourceMappingURL=main.css.map */
