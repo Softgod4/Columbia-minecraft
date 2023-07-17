@@ -1,7 +1,7 @@
 const TheFooter = () => {
     return (
         <footer style={{
-            marginTop: '500px'
+            
         }}>
             <section id="basement">
                 <div className="basement-item d_flex_row j_start">

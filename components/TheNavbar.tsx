@@ -37,16 +37,16 @@ const TheNavbar = () => {
                         border: '2px solid white',
                         borderRadius: '4px'
 
-                    }}>Sing Out</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
+                    }}>Выйти из {session.data.user?.name}</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
 
-                        padding: '12px 44px',
+                        padding: '12px 64px',
                         background: 'transparent',
                         color: 'white',
                         fontWeight: 'bold',
                         border: '2px solid white',
                         borderRadius: '4px'
                         
-                    }}>Sign In</Link>
+                    }}>Войти</Link>
                 }
             </div>
         </nav>
