@@ -53,7 +53,8 @@ body {
     .header_background {
         width: 100%;
         height: 687px;
-        background: linear-gradient(90deg, rgba(49,137,205,1)  0%, rgba(49,137,205,1) 35%, rgba(31,124,196,1) 100%);
+        background: linear-gradient(90deg, rgba(49,137,205,1)  0%, rgba(49,137,205,1) 35%, rgba(31,124,196,1) 100%), lightgray -51.37px 0px / 111.44% 100% no-repeat;
+
 
         img {
             position: absolute;
@@ -84,7 +85,6 @@ body {
                 & a {
                     margin-top: 30px;
                     white-space: nowrap;
-                    height: 16px;
                 }
                 & a:not(:first-child) {
                     margin-left: 25px;
@@ -107,35 +107,6 @@ body {
                     }
                 }
             }
-        }
-    }
-}
-#chips {
-    background: #111414;
-
-    .h2_title {
-        font-size: 48px;
-        padding-top: 117px;
-        color: white;
-    }
-
-    .chips_section {
-
-        margin-top: 10px;
-
-        &__text {
-
-            white-space: nowrap;
-
-            .h3_title {        
-                margin-bottom: 30px;
-            }
-            .p_title {
-                font-size: 18px;
-                line-height: 150%;
-                color: white;
-            }
-
         }
     }
 }
@@ -200,4 +171,20 @@ body {
         color: var(--white, #FFF);
         font-size: 24px;
     }
+}
+
+#accordion {
+    .container {
+
+        .accordion_img {
+            height: 432px;
+        }
+
+
+    }
+}
+
+.accord {
+    border-top: 2px solid #726363;
+    padding: 15px 0px;
 }

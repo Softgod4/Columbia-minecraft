@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --black: #111414;
   --white: #fff;
@@ -97,7 +100,7 @@ video {
 
 /* always display scrollbars */
 html {
-  height: 101%;
+  height: 100%;
 }
 
 body {
@@ -167,7 +170,7 @@ a:hover {
 }
 
 section {
-  margin: 100px 0 100px 0;
+  margin: 120px 0 120px 0;
 }
 
 section:first-child {
@@ -311,7 +314,7 @@ section:first-child {
   font-size: 48px;
   font-weight: 700;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .h1_title {
     font-size: 44px;
     font-weight: 700;
@@ -323,7 +326,7 @@ section:first-child {
   font-size: 27px;
   line-height: 37px;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .h2_title {
     text-align: center;
     font-size: 24px;
@@ -334,9 +337,8 @@ section:first-child {
   color: var(--white, #FFF);
   font-weight: 300;
   font-size: 36px;
-  line-height: 24px;
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .h3_title {
     margin-top: 10px;
     text-align: center;

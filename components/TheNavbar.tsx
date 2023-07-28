@@ -8,8 +8,8 @@ const TheNavbar = () => {
     console.log(session)
 
     return (
-        <nav id="navbar" className="d_flex_row j_between a_center">
-            <div className="nav-logo d_flex_row j_between a_center">
+        <nav id="navbar" className="flex flex-row justify-between items-center">
+            <div className="nav-logo flex flex-row justify-between items-center">
                 <img src="/logo.svg" alt="logo" />
                 <Link className="h2_title bold" href="/">Columbia</Link>
             </div>
