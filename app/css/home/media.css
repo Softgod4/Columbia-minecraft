@@ -1,6 +1,6 @@
 @media (max-width: 900px) {
   .header_background {
-    height: 600px !important;
+    height: 600px;
     background: #1e2020 !important;
   }
   .header_background img {
@@ -22,6 +22,10 @@
   #accordion {
     display: none;
   }
+  #basement .basement-item {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media (max-width: 460px) {
   #navbar .nav-logo h2 {
@@ -41,6 +45,9 @@
   }
 }
 @media (max-width: 350px) {
+  #header .header_background {
+    height: 750px;
+  }
   #header .header_background .header-text__button {
     flex-direction: column;
   }

@@ -128,10 +128,11 @@ body {
 #basement {
   position: absolute;
   width: 100%;
-  background: #1d2020;
+  border-radius: 25px;
   padding-top: 24px;
-  padding-left: 12px;
-  margin-bottom: 0px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: #1d2020;
 }
 #basement p {
   padding: 15px;

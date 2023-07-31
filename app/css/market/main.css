@@ -1,12 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
-#products .products__menu__title .neon-line {
-  margin-top: 5px;
-  height: 2px;
-  width: 140px;
-  border-radius: 4px;
-  background: white;
-  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
-}
 #products .products__menu__search .search p {
   color: white;
   font-size: 16px;
@@ -36,7 +28,7 @@
 }
 #products .products__block__item {
   max-width: 260px;
-  height: auto;
+  height: 300px;
   padding: 20px 30px;
   border-radius: 10px;
   background: #1D2020;
@@ -67,6 +59,15 @@
   color: black;
 }
 
+.neon-line {
+  margin-top: 5px;
+  height: 2px;
+  width: 140px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
+}
+
 #line {
   margin: 0px;
   width: 100%;
@@ -90,4 +91,8 @@
   border-radius: 4px;
   background: white;
   box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.15);
+}
+
+#server-list {
+  background-color: #111414;
 }/*# sourceMappingURL=main.css.map */

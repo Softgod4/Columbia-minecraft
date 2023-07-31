@@ -1,6 +1,6 @@
 @media (max-width: 900px) {
     .header_background {
-        height: 600px !important;
+        height: 600px;
         background: #1e2020 !important;
 
         img {
@@ -28,28 +28,14 @@
     }
 
     #accordion {
-
         display: none;
+    }
 
-    //     .container {
-    //         display: flex;
-    //         flex-direction: column;
-    //         justify-content: center;
-    //         height: 600px;
-    //         text-align: center;
-
-    //         span {
-    //             font-size: 14px;
-    //         }
-
-    //         .line {
-    //             width: 100%;
-    //         }
-
-    //         .accordion-img {
-    //             display: none;
-    //         }
-    //     }
+    #basement {
+        .basement-item {
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 }
 
@@ -90,6 +76,9 @@
 @media (max-width: 350px) {
     #header {
         .header_background {
+            
+            height: 750px;
+
             .header-text {
 
                 &__button {
