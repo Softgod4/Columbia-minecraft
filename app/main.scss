@@ -181,3 +181,12 @@ body {
         
     }
 }
+
+#sinking {
+    .container {
+        .box {
+            border-radius: 10px;
+            background: linear-gradient(0deg, #ABD3EF 0%, #ABD3EF 100%), linear-gradient(180deg, #FFF 0%, #FFF 100%);
+        }
+    }
+}

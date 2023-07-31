@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import '@/app/globals.css'
 import Image from "next/image";
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import Link from "next/link";
 
 export default function Home() {
 
@@ -81,8 +82,8 @@ export default function Home() {
 
           {/* аккордеон */}
 
-          <Accordion className="w-2/3 text-xl font-weight-700 font-bold text-gray-900 transition-height duration-200 ease-out transition">
-            <AccordionItem header="	&#10004; Почему сервер платный?" className="">
+          <Accordion className="w-1/3 text-xl font-weight-700 font-bold text-gray-900 transition-height duration-200 ease-out transition">
+            <AccordionItem header="	&gt;  Почему сервер платный?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
                 Таким образом мы фильтруем неадекватов, 
@@ -93,7 +94,7 @@ export default function Home() {
 
             <div className="line w-2/3 h-0.5 bg-gray-900 my-5"></div>
 
-            <AccordionItem header="	&#10004; Можно ли зайти с бедрок?">
+            <AccordionItem header="	&gt;  Можно ли зайти с бедрок?">
               <span className="text-xl font-normal py-4">
                 <br/>
                 Нет, нельзя
@@ -102,7 +103,7 @@ export default function Home() {
 
             <div className="line w-2/3 h-0.5 bg-gray-900 my-5"></div>
 
-            <AccordionItem header="	&#10004; Нужна лицензия майнкрафт?">
+            <AccordionItem header="	&gt;  Нужна лицензия майнкрафт?">
               <span className="text-xl font-normal py-4">
                 <br/>
                 Нет, лицензия не нужна.
@@ -112,6 +113,24 @@ export default function Home() {
 
           {/* аккордеон */}
 
+      </div>
+    </section>
+
+    <section id="sinking">
+      <div className="container flex flex-col justify-center items-center">
+        <div className="box py-2 rounded-xl flex flex-col text-center px-14">
+          <h2 className="text-xl font-bold">Стоимость доступа</h2>
+          <h2 className="text-5xl font-bold py-2">100 ₽</h2>
+          <ul className="flex flex-row justify-center items-center text-xl font-weight-600 font-normal list-disc">
+            <li>1.20</li>
+            <li className="mx-8">Minecraft: Java Edition</li>
+            <li>Пиратка</li>
+          </ul>
+          <div className="box_button flex flex-row justify-between mb-2 mt-5">
+            <Link href='/register' className="mx-2 button_a text-sm font-bold">Купить</Link>
+            <button className="mx-2 button_a text-sm font-bold">Скопировать IP</button>
+          </div>
+        </div>
       </div>
     </section>
   </div>

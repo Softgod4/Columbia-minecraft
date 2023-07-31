@@ -19,15 +19,12 @@ const TheNavbar = () => {
                 <Link href='/market' className='links'>Магазин</Link>
                 <Link href='/' className='links'>О сервере</Link>
                 <Link href='/' className='links'>Вики</Link>
-                {session?.data && (
-                    <Link href="/profile" className='links'>Профиль</Link>
-                )}
 
             </div>
 
             <div className="nav-button">
                 {session?.data ? 
-                    <Link href='#' onClick={() => signOut({callbackUrl: '/'})} style={{
+                    <Link href='/profile'  style={{
 
                         padding: '12px 44px',
                         background: 'transparent',
@@ -36,7 +33,7 @@ const TheNavbar = () => {
                         border: '2px solid white',
                         borderRadius: '4px'
 
-                    }}>Выйти из {session.data.user?.name}</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
+                    }}>{session.data.user?.name}</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
 
                         padding: '12px 64px',
                         background: 'transparent',
