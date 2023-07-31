@@ -257,22 +257,6 @@ section:first-child {
   align-items: baseline;
 }
 
-.t_center {
-  text-align: center !important;
-}
-
-.t_left {
-  text-align: left !important;
-}
-
-.t_right {
-  text-align: right !important;
-}
-
-.bold {
-  font-weight: 700 !important;
-}
-
 .button_a {
   background: var(--white);
   width: 100%;

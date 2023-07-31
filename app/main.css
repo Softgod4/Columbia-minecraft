@@ -126,6 +126,8 @@ body {
 }
 
 #basement {
+  position: absolute;
+  width: 100%;
   background: #1d2020;
   padding-top: 24px;
   padding-left: 12px;
@@ -142,11 +144,6 @@ body {
   font-size: 24px;
 }
 
-#accordion .container .accordion_img {
-  height: 432px;
-}
-
-.accord {
-  border-top: 2px solid #726363;
-  padding: 15px 0px;
+#accordion .container {
+  height: 430px;
 }/*# sourceMappingURL=main.css.map */

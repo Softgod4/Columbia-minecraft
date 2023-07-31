@@ -3,6 +3,7 @@
 import '../css/market/assets.css'
 import '../css/market/main.css'
 import '../css/market/media.css'
+
 import { useState } from 'react';
 
 export default function Market() {

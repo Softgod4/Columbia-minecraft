@@ -5,13 +5,12 @@ import { useSession } from 'next-auth/react';
 
 const TheNavbar = () => {
     const session = useSession()
-    console.log(session)
 
     return (
         <nav id="navbar" className="flex flex-row justify-between items-center">
             <div className="nav-logo flex flex-row justify-between items-center">
                 <img src="/logo.svg" alt="logo" />
-                <Link className="h2_title bold" href="/">Columbia</Link>
+                <Link className="text-3xl font-bold text-white" href="/">Columbia</Link>
             </div>
 
             <div className="nav-link">
