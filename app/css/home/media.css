@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     height: 600px;
+    text-align: center;
   }
   #accordion .container span {
     font-size: 14px;

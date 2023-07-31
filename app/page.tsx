@@ -81,7 +81,7 @@ export default function Home() {
 
           {/* аккордеон */}
 
-          <Accordion className="w-2/3 text-xl font-weight-700 font-bold text-gray-900">
+          <Accordion className="w-2/3 text-xl font-weight-700 font-bold text-gray-900 transition-height duration-200 ease-out transition">
             <AccordionItem header="	&#10004; Почему сервер платный?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
