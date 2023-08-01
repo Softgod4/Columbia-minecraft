@@ -20,7 +20,7 @@ body {
   padding: 12px 24px;
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
-  z-index: 99;
+  z-index: 9;
 }
 #navbar .nav-logo img {
   margin-right: 10px;

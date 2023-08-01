@@ -1,0 +1,22 @@
+@media (max-width: 1030px) {
+    #line-black {
+        display: none;
+    }
+    .modal__content {
+
+        width: 95% !important;
+
+        .content {
+            flex-direction: column !important;
+
+            .content_buy {
+                width: 100%;
+                height: auto;
+            }
+            .content-description {
+                display: none;
+            }
+        }
+    }
+    
+}

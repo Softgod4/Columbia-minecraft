@@ -7,12 +7,19 @@ import Image from 'next/image'
 
 import { useState } from 'react';
 import { useClipboard } from 'use-clipboard-copy'
+import Modal from '@/app/Modal/Modal'
 
 export default function Market() {
   const [searchTerm, setSearchTerm] = useState('');
+    // искать в магазине
 
   const clipboard = useClipboard();
   const clipboardCopy2 = useClipboard();
+  const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number } | null>(null);
+    // буфер обмена (скопировать)
+
+  const [modalActive, setModalActive] = useState(false) 
+    // модальное окно
 
   const products = [ 
       { name: 'Проходка', price: 99.00 },
@@ -57,26 +64,21 @@ export default function Market() {
                           <Image src="/item.svg" alt="" width='200' height='200'/>
                           <div className="buy-item flex flex-row items-center w-full justify-between">
                               <p>{product.price} &#8381;</p>
-                              <button className="button_b">Купить</button>
+                              <button className="button_b" onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Купить</button>
                           </div>
                       </div>
                   ))}
               </div>
           </div>
       </section>
-
       <section id='line' className='mb-0'></section>
-
       <section id='server-list'>
         <div className="container">
-
             <div className="products__menu__title flex flex-col justify-start mb-20">
                 <h2 className="h2_title">Наши сервера:</h2>
                 <div className="neon-line"></div>
             </div>
-            
             <div className='grid gap-4 grid-cols-2 grid-rows-1'>
-
                 <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6">
                     <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
@@ -99,7 +101,6 @@ export default function Market() {
                         </div>
                     </div>
                 </div>
-
                 <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6">
                     <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
@@ -122,11 +123,19 @@ export default function Market() {
                         </div>
                     </div>
                 </div>
-
             </div>
-            
         </div>
       </section>
+
+      {selectedProduct && (
+        <Modal
+            active={modalActive}
+            setActive={setModalActive}
+            productName={selectedProduct.name}
+            productPrice={selectedProduct.price}
+        />
+        )}
+
     </>
   )
 }

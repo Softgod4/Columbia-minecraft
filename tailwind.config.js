@@ -16,7 +16,8 @@ module.exports = {
       colors: {
         'greey': '#52525233',
         'light-orange': '#EFC7AB',
-        'server': '#525252'
+        'server': '#525252',
+        'input-modal': '#383838'
       }
     },
   },
