@@ -64,7 +64,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
             <div className='content-description w-2/5 h-full'>
                 <div className="flex flex-row items-center mb-5">
                     <Image src='/Modal/bx-check.svg' width='24' height='24' alt=''/>
-                    <p className='ml-2 text-white'>Описание товара</p>
+                    <p className='ml-2 text-white text-xl'>Описание товара</p>
                 </div>
 
                 <p className='text-white text-sm'>

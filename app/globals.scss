@@ -279,8 +279,9 @@ section:first-child{
     cursor: pointer;
 
     &:hover {
-        background: #1f1f1f;
+        background: #1e2020;
         color: var(--white);
+        box-shadow: 0px 0px 2px 2px #E3E3E3;
     }
 }
 
@@ -301,9 +302,9 @@ section:first-child{
     cursor: pointer;
 
     &:hover {
-        background: #1f1f1f;
+        background: #1e2020;
         color: var(--white);
-
+        box-shadow: 0px 0px 2px 2px #E3E3E3;
     }
 }
 

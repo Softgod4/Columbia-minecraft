@@ -9,11 +9,6 @@ import { useClipboard } from "use-clipboard-copy";
 export default function Home() {
 
   const clipboard = useClipboard();
-  const [activeTab, setActiveTab] = useState('');
-
-  const handleTabClick = (tabId: string) => {
-    setActiveTab(tabId === activeTab ? '' : tabId);
-  };
 
   return (
     <div>
@@ -41,40 +36,41 @@ export default function Home() {
     <section id="chips">
       <div className="container">
         <h2 className='text-center text-3xl text-white font-normal mb-12'>Фишки сервера</h2>
-
-        <div className="chips flex flex-row justify-between items-center my-14">
-          <Image src="/chip1.png" alt="pics" width="593" height="250"/>
-          <div className="chips_text w-1/3 p-6 rounded-xl bg-greey">
-            <h2 className="text-4xl text-white mb-4">Выживайте</h2>
-            <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+        <main>
+          <div className="chips flex flex-row justify-between items-center my-14">
+            <Image src="/chip1.png" alt="pics" width="593" height="250"/>
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+              <h2 className="text-4xl text-white mb-4">Выживайте</h2>
+              <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+            </article>
           </div>
-        </div>
 
-        <div className="chips flex flex-row justify-between items-center my-14">
-          <div className="chips_text w-1/3 p-6 rounded-xl bg-greey">
-            <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
-            <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
+          <div className="chips flex flex-row justify-between items-center my-14">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+              <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
+              <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
+            </article>
+            <Image src="/chip2.png" alt="pics" width="593" height="250"/>
           </div>
-          <Image src="/chip2.png" alt="pics" width="593" height="250"/>
-        </div>
 
-        <div className="chips flex flex-row justify-between items-center my-14">
-          <Image src="/chip3.png" alt="pics" width="593" height="250"/>
-          <div className="chips_text w-1/3 p-6 rounded-xl bg-greey">
-            <h2 className="text-4xl text-white mb-4">Участвуйте в сюжете</h2>
-            <p className="text-sm/[18px] text-white font-normal">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
+          <div className="chips flex flex-row justify-between items-center my-14">
+            <Image src="/chip3.png" alt="pics" width="593" height="250"/>
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+              <h2 className="text-4xl text-white mb-4">Участвуйте в сюжете</h2>
+              <p className="text-sm/[18px] text-white font-normal">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
+            </article>
+            
           </div>
-          
-        </div>
 
-        <div className="chips flex flex-row justify-between items-center my-14">
-          <div className="chips_text w-1/3 p-6 rounded-xl bg-greey">
-            <h2 className="text-4xl text-white mb-4">Управляйте</h2>
-            <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+          <div className="chips flex flex-row justify-between items-center my-14">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+              <h2 className="text-4xl text-white mb-4">Управляйте</h2>
+              <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+            </article>
+            <Image src="/chip4.png" alt="pics" width="593" height="250"/>
           </div>
-          <Image src="/chip4.png" alt="pics" width="593" height="250"/>
-        </div>
-
+        </main>
+        
       </div>
     </section>
 
