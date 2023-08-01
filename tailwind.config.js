@@ -15,7 +15,8 @@ module.exports = {
     extend: {
       colors: {
         'greey': '#52525233',
-        'light-orange': '#EFC7AB'
+        'light-orange': '#EFC7AB',
+        'server': '#525252'
       }
     },
   },

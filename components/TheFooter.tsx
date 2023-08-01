@@ -1,6 +1,8 @@
 import Image from "next/image"
+import { useClipboard } from "use-clipboard-copy";
 
 const TheFooter = () => {
+    
     return (
         <footer style={{
             
@@ -10,9 +12,9 @@ const TheFooter = () => {
 
                     <a href="#">Пользовательское соглашение</a>
                     <div className="basement-item__icon flex flex-row">
-                        <Image src="/icon/vk.svg" width='32' height='32' alt=""></Image>
-                        <Image src="/icon/discord.svg" width='32' height='32' alt="" className="ml-2 mr-4"></Image>
-                        <Image src="/icon/telegram.svg" width='22' height='22' alt=""></Image>
+                        <Image src="/icon/vk.svg" width='32' height='32' alt="" className="cursor-pointer"/> 
+                        <Image src="/icon/discord.svg" width='32' height='32' alt="" className="ml-2 mr-4 cursor-pointer"/> 
+                        <Image src="/icon/telegram.svg" width='22' height='22' alt="" className="cursor-pointer"/>
                     </div>
                     
                 </div>

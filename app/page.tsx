@@ -4,9 +4,11 @@ import '@/app/globals.css'
 import Image from "next/image";
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import Link from "next/link";
+import { useClipboard } from "use-clipboard-copy";
 
 export default function Home() {
 
+  const clipboard = useClipboard();
   const [activeTab, setActiveTab] = useState('');
 
   const handleTabClick = (tabId: string) => {
@@ -128,7 +130,8 @@ export default function Home() {
           </ul>
           <div className="box_button flex flex-row justify-between mb-2 mt-5">
             <Link href='/register' className="mx-2 button_a text-sm font-bold">Купить</Link>
-            <button className="mx-2 button_a text-sm font-bold">Скопировать IP</button>
+            <input ref={clipboard.target} value={'какой-то текст'} readOnly className="hidden"/>
+            <button className="mx-2 button_a text-sm font-bold" onClick={clipboard.copy}>Скопировать IP</button>
           </div>
         </div>
       </div>

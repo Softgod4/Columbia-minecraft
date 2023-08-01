@@ -28,9 +28,9 @@
 }
 #products .products__block__item {
   max-width: 260px;
-  height: 300px;
+  height: auto;
   padding: 20px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #1D2020;
   justify-self: center;
   transition: all 0.5s;
