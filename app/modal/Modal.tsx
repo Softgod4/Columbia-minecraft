@@ -1,6 +1,6 @@
 import React from 'react';
-import '@/app/Modal/Modal.css'
-import '@/app/Modal/media.css'
+import '@/app/css/modal/Modal.css'
+import '@/app/css/modal/media.css'
 import Image from 'next/image';
 
 interface ModalProps {

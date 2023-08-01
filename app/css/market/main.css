@@ -19,6 +19,7 @@
   color: white;
   background: var(--gray-700, #383838);
   border: none;
+  width: 100%;
 }
 #products .products__block {
   margin-top: 40px;

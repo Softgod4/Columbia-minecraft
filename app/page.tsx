@@ -24,7 +24,7 @@ export default function Home() {
           <h1>Уникальный сервер Minecraft</h1>
           <p>CL - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
           <div className="header-text__button flex flex-row items-center">
-            <a className="button_a max-h-10">Купить проходку</a>
+            <Link className="button_a max-h-10" href='/register'>Купить проходку</Link>
             <a className="button_b max-h-10" href="#chips">О сервере</a>
           </div>
           <div className="header-text__list">

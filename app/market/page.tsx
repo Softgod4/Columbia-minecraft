@@ -39,7 +39,7 @@ export default function Market() {
           <div className="container">
               <div className="products__menu flex flex-row justify-between items-center">
                   <div className="products__menu__title flex flex-col justify-start">
-                      <h2 className="h2_title">Наши товары:</h2>
+                      <h2 className="text-white text-3xl text-start mb-2">Наши товары:</h2>
                       <div className="neon-line"></div>
                   </div>
                   <div className="products__menu__search">
@@ -75,10 +75,10 @@ export default function Market() {
       <section id='server-list'>
         <div className="container">
             <div className="products__menu__title flex flex-col justify-start mb-20">
-                <h2 className="h2_title">Наши сервера:</h2>
+                <h2 className="text-white text-3xl text-start mb-2">Наши сервера:</h2>
                 <div className="neon-line"></div>
             </div>
-            <div className='grid gap-4 grid-cols-2 grid-rows-1'>
+            <div className='grid grid-flow-col gap-4 grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 justify-items-center'>
                 <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6">
                     <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
                         <div className="flex flex-row">

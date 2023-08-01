@@ -1,5 +1,5 @@
 import './globals.css'
-import './main.css'
+import '@/app/css/home/main.css'
 import './css/home/media.css'
 import { signIn } from "next-auth/react"
 import type { Metadata } from 'next'
@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Columbia minecraft',
-  description: 'minecraft server',
+  description: 'the most vanilla minecraft server',
 }
 
 export default function RootLayout({

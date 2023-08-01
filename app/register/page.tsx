@@ -1,6 +1,5 @@
-import '../css/register/assets.css'
+import '@/app/globals.css'
 import '../css/register/main.css'
-import '../css/register/media.css'
 
 export default function Home() {
     return (
