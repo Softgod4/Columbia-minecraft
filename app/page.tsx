@@ -1,4 +1,5 @@
 'use client'
+
 import { useEffect, useState } from "react"
 import '@/app/globals.css'
 import Image from "next/image";
@@ -11,7 +12,7 @@ export default function Home() {
   const clipboard = useClipboard();
 
   return (
-    <div>
+    <>
     <header id="header">
       <div className="header_background">
         <img src="/background.png" alt="" />
@@ -132,6 +133,6 @@ export default function Home() {
         </div>
       </div>
     </section>
-  </div>
+  </>
   )
 }
