@@ -119,7 +119,7 @@ export default function Home() {
       <div className="container flex flex-col justify-center items-center">
         <div className="box py-2 rounded-xl flex flex-col text-center px-14">
           <h2 className="text-xl font-bold">Стоимость доступа</h2>
-          <h2 className="text-5xl font-bold py-2">100 ₽</h2>
+          <h2 className="text-5xl font-bold py-2">99 ₽</h2>
           <ul className="flex flex-row justify-center items-center text-xl font-weight-600 font-normal list-disc">
             <li>1.20</li>
             <li className="mx-8">Minecraft: Java Edition</li>

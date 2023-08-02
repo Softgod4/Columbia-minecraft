@@ -28,9 +28,7 @@ const OurServer = () => {
                             <div className="bg-white h-2.5 rounded-full w-3/4"></div>
                         </div>
                     </div>
-                </div>
-
-                
+                </div>      
         </>
     )
 }
