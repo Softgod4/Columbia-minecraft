@@ -4,11 +4,11 @@ body {
 
 #register-form {
   margin-top: 50px;
-  padding: 10px;
+  padding: 15px 10px;
   gap: 50px;
   border-radius: 10px;
   max-width: 90%;
-  height: 522px;
+  height: auto;
   background-color: #1e2020;
   min-width: 25%;
 }
@@ -37,4 +37,14 @@ body {
 #register-form .form__up form input[type=button] {
   width: 103px;
   margin-top: 19px;
+}
+
+@media (max-width: 480px) {
+  #register-form .form__up .form__down_ver {
+    justify-content: space-around;
+    align-items: center;
+  }
+  #register-form .form__up .form__down_ver p:not(:first-child) {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

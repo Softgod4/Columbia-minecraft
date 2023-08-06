@@ -17,8 +17,8 @@ const TheNavbar = () => {
 
                 <Link href='/' className='links'>Главная</Link>
                 <Link href='/market' className='links'>Магазин</Link>
-                <Link href='/' className='links'>О сервере</Link>
-                <Link href='/' className='links'>Вики</Link>
+                <Link href='/#chips' className='links'>О сервере</Link>
+                <Link href='/wiki' className='links'>Вики</Link>
 
             </div>
 
@@ -35,14 +35,14 @@ const TheNavbar = () => {
 
                     }}>{session.data.user?.name}</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
 
-                        padding: '12px 64px',
-                        background: 'transparent',
-                        color: 'white',
+                        padding: '12px 34px',
+                        background: 'white',
+                        color: 'black',
                         fontWeight: 'bold',
                         border: '2px solid white',
                         borderRadius: '4px'
                         
-                    }}>Войти</Link>
+                    }}>Авторизация</Link>
                 }
             </div>
         </nav>
