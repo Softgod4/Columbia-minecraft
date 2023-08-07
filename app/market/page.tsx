@@ -49,8 +49,8 @@ export default function Market() {
                       <div className="search">
                           <p>Поиск по товарам:</p>
                           <div className="search__container flex flex-row">
-                              <Image src="/search.svg" alt="" />
-                              <Image src="/line.svg" alt="" />
+                              <img src="/search.svg" alt="" />
+                              <img src="/line.svg" alt="" />
                               <input 
                                   type="text" 
                                   placeholder="Введите текст" 
