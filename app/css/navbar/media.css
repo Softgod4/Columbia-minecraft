@@ -6,6 +6,6 @@
     display: none;
   }
   #navbar .burger {
-    display: block;
+    display: block !important;
   }
 }/*# sourceMappingURL=media.css.map */

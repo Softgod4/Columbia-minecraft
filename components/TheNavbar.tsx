@@ -5,6 +5,7 @@ import { useSession } from 'next-auth/react';
 import Image from 'next/image';
 
 import '@/app/css/navbar/media.css'
+
 import { useState } from 'react';
 
 const TheNavbar = () => {
