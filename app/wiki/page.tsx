@@ -57,9 +57,6 @@ export default function Wiki() {
                         <li className='py-1'><a>Ищете гайды?</a></li>
                         <li className='py-1'><a>Остались вопросы?</a></li>
                     </ul>
-                    
-                    
-
                 </div>
 
             </div>

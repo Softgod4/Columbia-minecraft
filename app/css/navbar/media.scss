@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+    #navbar {
+        .nav-logo {
+            .text-3xl {
+                display: none;
+            }
+        }
+        .nav-link {
+            display: none;
+        }
+        
+        .burger {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+  #navbar .nav-logo .text-3xl {
+    display: none;
+  }
+  #navbar .nav-link {
+    display: none;
+  }
+  #navbar .burger {
+    display: block;
+  }
+}/*# sourceMappingURL=media.css.map */
