@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 import { useState } from 'react';
 import { useClipboard } from 'use-clipboard-copy'
-import Modal from '@/app/Modal/Modal'
+import Modal from '../Modal/Modal'
 
 import OurServer, { OurServer2 } from '@/components/OurServer';
 
