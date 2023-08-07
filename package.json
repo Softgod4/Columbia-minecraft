@@ -26,5 +26,10 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3"
-  }
+  },
+  "description": "server for minecraft",
+  "main": "index.js",
+  "repository": "https://github.com/Softgod4/Columbia-minecraft.git",
+  "author": "Softgodworld <softgod2005@gmail.com>",
+  "license": "MIT"
 }

@@ -15,7 +15,7 @@ export default function Home() {
     <>
     <header id="header">
       <div className="header_background">
-        <img src="/background.png" alt="" />
+        <Image src="/background.png" alt="" />
         <div className="header-text flex flex-col justify-center items-center">
           <h1>Уникальный сервер Minecraft</h1>
           <p>CL - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
