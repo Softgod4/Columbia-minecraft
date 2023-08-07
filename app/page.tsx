@@ -20,7 +20,7 @@ export default function Home() {
           <h1>Уникальный сервер Minecraft</h1>
           <p>CL - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
           <div className="header-text__button flex flex-row items-center">
-            <Link className="button_a max-h-10" href='/register'>Купить проходку</Link>
+            <Link className="button_a max-h-10" href='/market'>Купить проходку</Link>
             <a className="button_b max-h-10" href="#chips">О сервере</a>
           </div>
           <div className="header-text__list">
@@ -126,7 +126,7 @@ export default function Home() {
             <li>Пиратка</li>
           </ul>
           <div className="box_button flex flex-row justify-between mb-2 mt-5">
-            <Link href='/register' className="mx-2 button_a text-sm font-bold">Купить</Link>
+            <Link href='/market' className="mx-2 button_a text-sm font-bold">Купить</Link>
             <input ref={clipboard.target} value={'какой-то текст'} readOnly className="hidden"/>
             <button className="mx-2 button_a text-sm font-bold" onClick={clipboard.copy}>Скопировать IP</button>
           </div>
