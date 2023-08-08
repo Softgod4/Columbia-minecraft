@@ -65,9 +65,9 @@ export default function Market() {
                       <div key={index} className="products__block__item flex flex-col justify-center items-center">
                           <h2 className="h2_title text-center whitespace-nowrap">{product.name}</h2>
                           <Image src="/item.svg" alt="" width='200' height='200'/>
-                          <div className="buy-item flex flex-row items-center w-full justify-between">
+                          <div className="buy-item flex flex-row items-center w-full justify-around">
                               <p>{product.price} &#8381;</p>
-                              <button className="button_b" onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Купить</button>
+                              <button className="button_b flex items-center justify-center text-xl" onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Купить</button>
                           </div>
                       </div>
                   ))}

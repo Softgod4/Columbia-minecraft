@@ -1,13 +1,27 @@
 import Image from "next/image"
+import { useState } from "react";
 import { useClipboard } from 'use-clipboard-copy'
 
 const OurServer = () => {
 
-    const clipboard = useClipboard();
+    const TimeOut = () => {
+        setIsCopied1(false)
+      }
+
+    const [isCopied1, setIsCopied1] = useState(false)
+    const clipboard = useClipboard({
+        onSuccess() {
+            setIsCopied1(true)
+            setTimeout(TimeOut, 2000)
+        },
+        onError() {
+            setIsCopied1(false);
+        }
+    });
 
     return (
         <>
-                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6">
+                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500">
                     <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
                             <Image src='/logo.svg' alt='' width='32' height='32'></Image>
@@ -16,7 +30,7 @@ const OurServer = () => {
                         <p className='text-2xl text-white'>Версия: 1.20</p>
                     </div>
                     <div className='w-full px-2 py-4 flex flex-row justify-between items-center rounded-xl bg-greey'>
-                        <p className='text-2xl font-bold text-white'>Columbia.ru</p>
+                        <p className='text-2xl font-bold text-white'>{isCopied1 ? 'Скопировано!' : 'Columbia.ru'}</p>
                         <input ref={clipboard.target} value={'Columbia.ru'} readOnly className='hidden'/>
                         <Image src='/copy.svg' width='32' height='32' alt='' className='cursor-pointer' onClick={clipboard.copy}/>
                     </div>
@@ -35,10 +49,22 @@ const OurServer = () => {
 
 const OurServer2 = () => {
 
-    const clipboardCopy2 = useClipboard();
+    const TimeOut = () => {
+        setIsCopied2(false)
+    }
+    const [isCopied2, setIsCopied2] = useState(false)
+    const clipboardCopy2 = useClipboard({
+        onSuccess() {
+            setIsCopied2(true)
+            setTimeout(TimeOut, 2000)
+        },
+        onError() {
+            setIsCopied2(false);
+        }
+    });
 
     return (
-                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6">
+                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500">
                     <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
                             <Image src='/logo.svg' alt='' width='32' height='32'/>
@@ -47,7 +73,7 @@ const OurServer2 = () => {
                         <p className='text-2xl text-white'>Версия: ?.??</p>
                     </div>
                     <div className='w-full px-2 py-4 flex flex-row justify-between items-center rounded-xl bg-greey'>
-                        <p className='text-2xl font-bold text-white'>??.ru</p>
+                        <p className='text-2xl font-bold text-white'>{isCopied2 ? 'Скопировано!' : '??.ru'}</p>
                         <input ref={clipboardCopy2.target} value={'ничего'} readOnly className='hidden'/>
                         <Image src='/copy.svg' width='32' height='32' alt='' className='cursor-pointer' onClick={clipboardCopy2.copy}/>
                     </div>

@@ -9,7 +9,20 @@ import { useClipboard } from "use-clipboard-copy";
 
 export default function Home() {
 
-  const clipboard = useClipboard();
+  const TimeOut = () => {
+    setIsCopied(false)
+  }
+
+  const [isCopied, setIsCopied] = useState(false);
+  const clipboard = useClipboard({
+    onSuccess() {
+      setIsCopied(true);
+      setTimeout(TimeOut, 2000)
+    },
+    onError() {
+      setIsCopied(false);
+    }
+  });
 
   return (
     <>
@@ -20,8 +33,8 @@ export default function Home() {
           <h1>Уникальный сервер Minecraft</h1>
           <p>CL - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
           <div className="header-text__button flex flex-row items-center">
-            <Link className="button_a max-h-10" href='/market'>Купить проходку</Link>
-            <a className="button_b max-h-10" href="#chips">О сервере</a>
+            <Link className="button_a max-h-10 flex items-center justify-center text-sm" href='/market'>Купить проходку</Link>
+            <a className="button_b max-h-10 flex items-center justify-center text-sm" href="#chips">О сервере</a>
           </div>
           <div className="header-text__list">
             <ul className="flex flex-row justify-between items-center">
@@ -40,14 +53,14 @@ export default function Home() {
         <main>
           <div className="chips flex flex-row justify-between items-center my-14">
             <img src="/chip1.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Выживайте</h2>
               <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
               <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
             </article>
@@ -56,7 +69,7 @@ export default function Home() {
 
           <div className="chips flex flex-row justify-between items-center my-14">
             <img src="/chip3.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Участвуйте в сюжете</h2>
               <p className="text-sm/[18px] text-white font-normal">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
             </article>
@@ -64,7 +77,7 @@ export default function Home() {
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Управляйте</h2>
               <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
@@ -128,7 +141,7 @@ export default function Home() {
           <div className="box_button flex flex-row justify-between mb-2 mt-5">
             <Link href='/market' className="mx-2 button_a text-sm font-bold">Купить</Link>
             <input ref={clipboard.target} value={'какой-то текст'} readOnly className="hidden"/>
-            <button className="mx-2 button_a text-sm font-bold" onClick={clipboard.copy}>Скопировать IP</button>
+            <button className="mx-2 button_a text-sm font-bold flex items-center justify-center btn-copy1" onClick={clipboard.copy}>{isCopied ? 'Скопировано!' : 'Скопировать IP'}</button>
           </div>
         </div>
       </div>
