@@ -8,9 +8,10 @@ interface ModalProps {
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
   productName: string;
   productPrice: number;
+  productDesc: number;
 }
 
-const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice }) => {
+const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice, productDesc }) => {
   return (
     <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
       <div className="modal__content" onClick={e => e.stopPropagation()}>
@@ -68,7 +69,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                 </div>
 
                 <p className='text-white text-sm'>
-                Покупая данный товар вы получаете проход на сервер CLS, здесь вы сможете поучаствовать в ивентах-сюжетах, построить свои проекты, и возможно найти новых друзей.
+                    {productDesc}
                 </p>
             </div>
 

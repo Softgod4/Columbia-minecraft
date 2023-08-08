@@ -18,18 +18,18 @@ export default function Market() {
 
   const clipboard = useClipboard();
   const clipboardCopy2 = useClipboard();
-  const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number } | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number; desc: string; } | null>(null);
     // буфер обмена (скопировать)
 
   const [modalActive, setModalActive] = useState(false) 
     // модальное окно
 
   const products = [ 
-      { name: 'Проходка', price: 99.00 },
-      { name: 'Plus 1 МЕСЯЦ', price: 99.00 },
-      { name: 'Plus 3 МЕСЯЦ', price: 267.00 },
-      { name: 'Plus 6 МЕСЯЦ', price: 475.00 },
-      { name: 'РАЗБАН', price: 599.00 },
+      { name: 'Проходка', price: 99.00, desc: 'Покупая данный товар вы получаете доступ к игре на основной сервер cls в игре майнкрафт, вход на который возможен с пиратки, и лицензии. Основной режим игры — это классическое, ванильное выживание с элементами рп. Которое дополняют самописные - общедоступные плагины. На сервере игроки могут создавать свои города или вступать уже созданные общины. (Возврат возможен только при условии что вы наиграли на сервере не более 2-х часов и не внесли ни единого изменения в мир сервера, будь то собирание ягод или ломание/размещение блока. Так же любое нарушение правил сервера так же стает фактором который запрещает совершить возврат)'},
+      { name: 'Plus 1 МЕСЯЦ', price: 99.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на (срок). Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'},
+      { name: 'Plus 3 МЕСЯЦ', price: 267.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на (срок). Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'}, 
+      { name: 'Plus 6 МЕСЯЦ', price: 475.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на (срок). Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'},
+      { name: 'РАЗБАН', price: 599.00, desc: 'Покупая данный товар вы получаете прощение за ваши грехи которые вы сотворили на сервере cls. Покупка данного товара не ограничена, возрату не подлежит.' },
   ];
 
   const filteredProducts = products.filter(product => 
@@ -67,6 +67,7 @@ export default function Market() {
                           <Image src="/item.svg" alt="" width='200' height='200'/>
                           <div className="buy-item flex flex-row items-center w-full justify-around">
                               <p>{product.price} &#8381;</p>
+                              <p className='hidden'>{product.desc}</p>
                               <button className="button_b flex items-center justify-center text-xl" onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Купить</button>
                           </div>
                       </div>
@@ -94,6 +95,7 @@ export default function Market() {
             setActive={setModalActive}
             productName={selectedProduct.name}
             productPrice={selectedProduct.price}
+            productDesc={selectedProduct.desc}
         />
         )}
 
