@@ -136,11 +136,11 @@ export default function Home() {
 
     <section id="sinking">
       <div className='container'>
-        <h2 className='text-center text-3xl font-semibold text-white mb-2'>Готовы стать частью нашего сообщества?</h2>
-        <p className='text-center text-xl font-normal text-white mb-10'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
+        <h2 className='text-center h2_title mb-2 font-semibold'>Готовы стать частью нашего сообщества?</h2>
+        <p className='text-center text-xl font-normal text-slate-300 mb-16'>Жмите на кнопку, чтобы купить проходку и начать приключение!</p>
         <div className='flex md:flex-row flex-col md:justify-around justify-around items-center'>
 
-          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl border-8 border-blue-500 border-solid' style={{ width: '420px'}}>
+          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl border-8 border-blue-500 border-solid cool-cover transition-all duration-500' style={{ MinWidth: '480px'}}>
             <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
             <p className='font-bold text-2xl mb-3'>80 &#8381;</p>
             <ul className='mb-4 list-disc ml-2'>
@@ -152,7 +152,7 @@ export default function Home() {
             <Link href='/market' className='text-black py-3 px-4 bg-white rounded-md font-semibold border-solid border border-white'>Купить проходку за 80 &#8381;</Link>
           </div> 
 
-        <div className='p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0' style={{ width: '420px'}}>
+        <div className='p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0 cool-cover transition-all duration-500' style={{ width: '460px'}}>
           <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
           <p className='font-bold text-2xl mb-3'>0 &#8381;</p>
           <ul className='mb-4 list-disc ml-2'>
@@ -161,11 +161,23 @@ export default function Home() {
             <li className='my-2 font-medium'>Minecraft Java Edition 1.20.1 или Bedrock</li>
             <li className='my-2 font-medium'>Пиратка или лицензия</li>
           </ul>
-          <Link href='/market' className='text-white py-3 px-4 bg-greey rounded-md font-semibold border-solid border border-white'>Купить проходку за 0 &#8381;</Link>
+          <Link href='/market' className='text-white py-3 px-4 bg-greey rounded-md font-semibold border-2 border-solid border-white hover:bg-white hover:text-black transition-all ease-in duration-100'>Купить проходку за 0 &#8381;</Link>
         </div> 
       </div>
 
       </div>    
+    </section>
+
+    <section id='NotSure'>
+      <div className=''>
+        <h2 className='h2_title text-center font-semibold mb-2'>Еще не уверены?</h2>
+        <p className='text-center text-xl font-normal text-slate-300 mb-14'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
+
+        <div className='grid gap-8'>
+          
+        </div>
+
+      </div> 
     </section>
   </>
   )
