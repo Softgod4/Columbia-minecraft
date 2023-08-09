@@ -80,7 +80,7 @@ export default function Home() {
           <div className="chips flex flex-row justify-between items-center my-14">
             <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Управляйте</h2>
-              <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+              <p className="text-sm/[18px] text-white">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
             <img src="/chip4.png" alt="pics" width="593" height="250"/>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
 
           {/* аккордеон */}
 
-          <Accordion className="w-1/3 text-xl font-weight-700 font-bold text-white transition-height duration-200 ease-out transition">
+          <Accordion className="w-1/3 text-xl font-bold text-white">
             <AccordionItem header="	&gt; зачем платить за проходку?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
@@ -135,22 +135,23 @@ export default function Home() {
     </section>
 
     <section id="sinking">
-      <div className="container flex flex-col justify-center items-center">
-        <div className="box py-2 rounded-xl flex flex-col text-center px-14">
-          <h2 className="text-xl font-bold">Стоимость доступа</h2>
-          <h2 className="text-5xl font-bold py-2">99 ₽</h2>
-          <ul className="flex flex-row justify-center items-center text-xl font-weight-600 font-normal list-disc">
-            <li>1.20</li>
-            <li className="mx-8">Minecraft: Java Edition</li>
-            <li>Пиратка</li>
-          </ul>
-          <div className="box_button flex flex-row justify-between mb-2 mt-5">
-            <Link href='/market' className="mx-2 button_a text-sm font-bold">Купить</Link>
-            <input ref={clipboard.target} value={'какой-то текст'} readOnly className="hidden"/>
-            <button className="mx-2 button_a text-sm font-bold flex items-center justify-center btn-copy1" onClick={clipboard.copy}>{isCopied ? 'Скопировано!' : 'Скопировать IP'}</button>
-          </div>
+      <div className='container'>
+        <h2 className='text-center text-3xl font-semibold text-white mb-2'>Готовы стать частью нашего сообщества?</h2>
+        <p className='text-center text-xl font-normal text-white'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
+        <div className='flex flex-row justify-between items-center'>
+          <div className='p-11 flex flex-col items-start justify-start bg-blue-700 text-white'>
+            <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
+            <p className='font-bold text-xl'>80 &#8381;</p>
+            <ul>
+              <li>Проходка на 3 года с последнего вайпа: 11 Августа 2023<li>
+              <li>Доступ ко всему функционалу сервера<li>
+              <li>Minecraft Java Edition 1.20.1 или Bedrock<li>
+              <li>Пиратка или лицензия<li>
+            </ul>
+            <Link href='/market' className='text-black py-6 px-4 bg-white rounded-sm'>Купить проходку за 80 &#8381;</Link>
+          </div> 
         </div>
-      </div>
+      </div>    
     </section>
   </>
   )
