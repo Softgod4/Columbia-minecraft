@@ -89,27 +89,32 @@ export default function Home() {
     </section>
 
     <section id="accordion">
-      <div className="container bg-light-orange rounded-xl flex flex-row justify-between items-center">
-        <img src="/chip2.png" alt="pics" width='776' height='432' className="accordion-img"/>
+      <div className="container bg-light-orange rounded-xl flex flex-row justify-between items-center" style={{height: '500px'}}>
+        <img src="/chip2.png" alt="pics" className="accordion-img"/>
 
           {/* аккордеон */}
 
           <Accordion className="w-1/3 text-xl font-weight-700 font-bold text-gray-900 transition-height duration-200 ease-out transition">
-            <AccordionItem header="	&gt;  Почему сервер платный?" className="">
+            <AccordionItem header="	&gt; зачем платить за проходку?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
-                Таким образом мы фильтруем неадекватов, 
-                гриферов и других нарушителей правил. Купив проходку, 
-                вы помогаете проекту существовать и развиваться дальше.
+                  Платный доступ к серверу позволяет отсеивать большую часть гриферов, 
+                  поэтому на сервере нет привата территории. 
+                  Также сервер существует за деньги полученные с проходок, 
+                  поэтому мы не продаем привилегии, которые дают преимущество в игре.
               </span>
             </AccordionItem>
 
             <div className="line w-2/3 h-0.5 bg-gray-900 my-5"></div>
 
-            <AccordionItem header="	&gt;  Можно ли зайти с бедрок?">
+            <AccordionItem header="	&gt;  Могу ли я вернуть деньги">
               <span className="text-xl font-normal py-4">
                 <br/>
-                Нет, нельзя
+                  Да, мы возвращаем деньги, только при условии что вы наиграли на сервере 
+                  не более 2-х часов и не внесли ни единого изменения в мир сервера, 
+                  будь то собирание ягод или ломание/размещение блока. 
+                  Так же любое нарушение правил сервера так же стает фактором который 
+                  запрещает совершить возврат)             
               </span>
             </AccordionItem>
 
