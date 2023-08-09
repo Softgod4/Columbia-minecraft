@@ -169,12 +169,72 @@ export default function Home() {
     </section>
 
     <section id='NotSure'>
-      <div className=''>
+      <div className='container'>
         <h2 className='h2_title text-center font-semibold mb-2'>Еще не уверены?</h2>
         <p className='text-center text-xl font-normal text-slate-300 mb-14'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
 
-        <div className='grid gap-8'>
-          
+        <div className='grid gap-12 grid-cols-3 grid-rows-2'>
+
+          <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#2aabee'}}>
+               <img src='/telegram.svg'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Сообщество Telegram</p>
+              <p className='text-sm'>Новости и скриншоты</p>
+            </div>
+          </div>
+
+          <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#515dd7'}}>
+               <img src='/discord.svg'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Discord сервер</p>
+              <p className='text-sm'>Познакомьтесь с сообществом</p>
+            </div>
+          </div>
+
+           <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+               <img src='/icon/wiki.png'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Вики сервера</p>
+              <p className='text-sm'>Подробнее про конкретные фишки</p>
+            </div>
+          </div>
+
+          <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+               <img src='/icon/stats.png'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Статистика онлайна</p>
+              <p className='text-sm'>Убедитесь что сервер активный</p>
+            </div>
+          </div>
+
+          <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+               <img src='/icon/card.png'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Интерактивная карта</p>
+              <p className='text-sm'>Посмотрите на игровой мир</p>
+            </div>
+          </div>
+
+          <div className='flex flex-row self-center items-center w-80'>
+            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+               <img src='/icon/diamond.png'/>
+            </div>
+            <div className='flex flex-col items-start ml-4 text-white'>
+              <p className='mb-2 font-semibold text-lg'>Купить проходку</p>
+              <p className='text-sm'>Станьте частью сообщества</p>
+            </div>
+          </div>
+
         </div>
 
       </div> 
