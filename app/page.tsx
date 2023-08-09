@@ -51,7 +51,7 @@ export default function Home() {
       <div className="container">
         <h2 className='text-center text-3xl text-white font-normal mb-12'>Фишки сервера</h2>
         <main>
-          <div className="chips flex flex-row justify-between items-center my-14">
+          <div className="chips flex justify-between items-center my-14">
             <img src="/chip1.png" alt="pics" width="593" height="250"/>
             <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
               <h2 className="text-4xl text-white mb-4">Выживайте</h2>

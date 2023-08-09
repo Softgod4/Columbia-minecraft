@@ -19,6 +19,12 @@
   #chips .chips .chips_text {
     width: 100%;
   }
+  #chips .chips:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  #chips .chips:nth-child(4) {
+    flex-direction: column-reverse;
+  }
   #accordion {
     display: none;
   }
