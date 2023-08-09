@@ -73,22 +73,4 @@
   #chips .chips_sec .chips_section__text {
     white-space: pre-wrap;
   }
-}
-@media (max-width: 560px) {
-  #sinking ul {
-    display: flex;
-    flex-direction: column;
-    display: none;
-  }
-  #sinking ul li {
-    margin-top: 15px;
-  }
-  #sinking .box_button {
-    display: flex;
-    flex-direction: column;
-  }
-  #sinking .box_button button {
-    margin-top: 12px;
-    white-space: nowrap;
-  }
 }/*# sourceMappingURL=media.css.map */
