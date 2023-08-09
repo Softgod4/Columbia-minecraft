@@ -137,18 +137,18 @@ export default function Home() {
     <section id="sinking">
       <div className='container'>
         <h2 className='text-center text-3xl font-semibold text-white mb-2'>Готовы стать частью нашего сообщества?</h2>
-        <p className='text-center text-xl font-normal text-white'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
+        <p className='text-center text-xl font-normal text-white mb-6'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
         <div className='flex flex-row justify-between items-center'>
-          <div className='p-11 flex flex-col items-start justify-start bg-blue-700 text-white'>
+          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl'>
             <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
-            <p className='font-bold text-xl'>80 &#8381;</p>
-            <ul>
-              <li>Проходка на 3 года с последнего вайпа: 11 Августа 2023<li>
-              <li>Доступ ко всему функционалу сервера<li>
-              <li>Minecraft Java Edition 1.20.1 или Bedrock<li>
-              <li>Пиратка или лицензия<li>
+            <p className='font-bold text-2xl mb-3'>80 &#8381;</p>
+            <ul className='mb-4'>
+              <li className='my-2 font-medium'>Проходка на 3 года с последнего вайпа: 11 Августа 2023</li>
+              <li className='my-2 font-medium'>Доступ ко всему функционалу сервера</li>
+              <li className='my-2 font-medium'>Minecraft Java Edition 1.20.1 или Bedrock</li>
+              <li className='my-2 font-medium'>Пиратка или лицензия</li>
             </ul>
-            <Link href='/market' className='text-black py-6 px-4 bg-white rounded-sm'>Купить проходку за 80 &#8381;</Link>
+            <Link href='/market' className='text-black py-3 px-4 bg-white rounded-sm font-semibold'>Купить проходку за 80 &#8381;</Link>
           </div> 
         </div>
       </div>    
