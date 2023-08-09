@@ -49,7 +49,8 @@ export default function Home() {
 
     <section id="chips">
       <div className="container">
-        <h2 className='text-center text-3xl text-white font-normal mb-12'>Фишки сервера</h2>
+        <h2 className='text-center text-3xl text-white font-normal mb-1'>Сервер - как социальная сеть</h2>
+        <p className='text-center text-sm text-white mb-12'>Игроки заходят на сервер чтобы общаться, найти новую компанию, друзей или девушку</p>
         <main>
           <div className="chips flex justify-between items-center my-14">
             <img src="/chip1.png" alt="pics" width="593" height="250"/>
@@ -88,42 +89,42 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="accordion">
-      <div className="container bg-light-orange rounded-xl flex flex-row justify-between items-center" style={{height: '500px'}}>
-        <img src="/chip2.png" alt="pics" className="accordion-img"/>
+    <section id="accordion" className='bg-greey rounded-xl'>
+      <div className="container rounded-xl flex flex-row justify-between items-center" style={{height: '500px'}}>
+        <img src="/new-accordion.png" alt="pics" className="accordion-img"/>
 
           {/* аккордеон */}
 
-          <Accordion className="w-1/3 text-xl font-weight-700 font-bold text-gray-900 transition-height duration-200 ease-out transition">
+          <Accordion className="w-1/3 text-xl font-weight-700 font-bold text-white transition-height duration-200 ease-out transition">
             <AccordionItem header="	&gt; зачем платить за проходку?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
-                  Платный доступ к серверу позволяет отсеивать большую часть гриферов, 
+                  <p className='text-sm'>Платный доступ к серверу позволяет отсеивать большую часть гриферов, 
                   поэтому на сервере нет привата территории. 
                   Также сервер существует за деньги полученные с проходок, 
-                  поэтому мы не продаем привилегии, которые дают преимущество в игре.
+                  поэтому мы не продаем привилегии, которые дают преимущество в игре.</p>
               </span>
             </AccordionItem>
 
-            <div className="line w-2/3 h-0.5 bg-gray-900 my-5"></div>
+            <div className="line w-4/5 h-0.5 bg-white my-5"></div>
 
             <AccordionItem header="	&gt;  Могу ли я вернуть деньги">
               <span className="text-xl font-normal py-4">
                 <br/>
-                  Да, мы возвращаем деньги, только при условии что вы наиграли на сервере 
+                  <p className='text-sm'>Да, мы возвращаем деньги, только при условии что вы наиграли на сервере 
                   не более 2-х часов и не внесли ни единого изменения в мир сервера, 
                   будь то собирание ягод или ломание/размещение блока. 
                   Так же любое нарушение правил сервера так же стает фактором который 
-                  запрещает совершить возврат)             
+                  запрещает совершить возврат)</p>             
               </span>
             </AccordionItem>
 
-            <div className="line w-2/3 h-0.5 bg-gray-900 my-5"></div>
+            <div className="line w-4/5 h-0.5 bg-white my-5"></div>
 
             <AccordionItem header="	&gt;  Нужна лицензия майнкрафт?">
               <span className="text-xl font-normal py-4">
                 <br/>
-                Нет, лицензия не нужна.
+                <p className='text-sm'>Нет, лицензия не нужна. Вы можете играть на пиратском лаунчере.</p>
               </span>
             </AccordionItem>
           </Accordion>
