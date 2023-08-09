@@ -140,7 +140,7 @@ export default function Home() {
         <p className='text-center text-xl font-normal text-slate-300 mb-16'>Жмите на кнопку, чтобы купить проходку и начать приключение!</p>
         <div className='flex md:flex-row flex-col md:justify-around justify-around items-center'>
 
-          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl border-8 border-blue-500 border-solid cool-cover transition-all duration-500' style={{ MinWidth: '480px'}}>
+          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl border-8 border-blue-500 border-solid cool-cover transition-all duration-500'>
             <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
             <p className='font-bold text-2xl mb-3'>80 &#8381;</p>
             <ul className='mb-4 list-disc ml-2'>
@@ -152,7 +152,7 @@ export default function Home() {
             <Link href='/market' className='text-black py-3 px-4 bg-white rounded-md font-semibold border-solid border border-white'>Купить проходку за 80 &#8381;</Link>
           </div> 
 
-        <div className='p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0 cool-cover transition-all duration-500' style={{ width: '460px'}}>
+        <div className='responsive p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0 cool-cover transition-all duration-500' style={{ width: '460px'}}>
           <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
           <p className='font-bold text-2xl mb-3'>0 &#8381;</p>
           <ul className='mb-4 list-disc ml-2'>

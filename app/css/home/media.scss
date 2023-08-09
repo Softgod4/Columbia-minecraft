@@ -125,4 +125,12 @@
 
 }
 
+@media (max-width: 768px) {
+    #sinking {
+        .responsive {
+            width: auto !important;
+        }
+    }
+}
+
 

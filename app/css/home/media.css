@@ -73,4 +73,9 @@
   #chips .chips_sec .chips_section__text {
     white-space: pre-wrap;
   }
+}
+@media (max-width: 768px) {
+  #sinking .responsive {
+    width: auto !important;
+  }
 }/*# sourceMappingURL=media.css.map */
