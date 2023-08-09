@@ -112,7 +112,6 @@ body {
 #header .header_background img {
   position: absolute;
   top: 75px;
-  max-width: 1640px;
   height: auto;
   z-index: 1;
 }

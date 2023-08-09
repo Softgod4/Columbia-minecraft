@@ -137,20 +137,34 @@ export default function Home() {
     <section id="sinking">
       <div className='container'>
         <h2 className='text-center text-3xl font-semibold text-white mb-2'>Готовы стать частью нашего сообщества?</h2>
-        <p className='text-center text-xl font-normal text-white mb-6'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
-        <div className='flex flex-row justify-between items-center'>
-          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl'>
+        <p className='text-center text-xl font-normal text-white mb-10'>Жмите на кнопку, чтобы авторизоваться через Discord и купить проходку</p>
+        <div className='flex md:flex-row flex-col md:justify-around justify-around items-center'>
+
+          <div className='p-11 flex flex-col items-start justify-start bg-blue-500 text-white rounded-xl border-8 border-blue-500 border-solid' style={{ width: '420px'}}>
             <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
             <p className='font-bold text-2xl mb-3'>80 &#8381;</p>
-            <ul className='mb-4'>
+            <ul className='mb-4 list-disc ml-2'>
               <li className='my-2 font-medium'>Проходка на 3 года с последнего вайпа: 11 Августа 2023</li>
               <li className='my-2 font-medium'>Доступ ко всему функционалу сервера</li>
               <li className='my-2 font-medium'>Minecraft Java Edition 1.20.1 или Bedrock</li>
               <li className='my-2 font-medium'>Пиратка или лицензия</li>
             </ul>
-            <Link href='/market' className='text-black py-3 px-4 bg-white rounded-sm font-semibold'>Купить проходку за 80 &#8381;</Link>
+            <Link href='/market' className='text-black py-3 px-4 bg-white rounded-md font-semibold border-solid border border-white'>Купить проходку за 80 &#8381;</Link>
           </div> 
-        </div>
+
+        <div className='p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0' style={{ width: '420px'}}>
+          <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
+          <p className='font-bold text-2xl mb-3'>0 &#8381;</p>
+          <ul className='mb-4 list-disc ml-2'>
+            <li className='my-2 font-medium'>Проходка на один месяц</li>
+            <li className='my-2 font-medium'>Доступ ко всему функционалу сервера</li>
+            <li className='my-2 font-medium'>Minecraft Java Edition 1.20.1 или Bedrock</li>
+            <li className='my-2 font-medium'>Пиратка или лицензия</li>
+          </ul>
+          <Link href='/market' className='text-white py-3 px-4 bg-greey rounded-md font-semibold border-solid border border-white'>Купить проходку за 0 &#8381;</Link>
+        </div> 
+      </div>
+
       </div>    
     </section>
   </>

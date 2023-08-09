@@ -125,27 +125,4 @@
 
 }
 
-@media (max-width: 560px) {
-    #sinking {
 
-        ul {
-            display: flex;
-            flex-direction: column;
-            display: none;
-
-            li {
-                margin-top: 15px;
-            }
-        }
-
-        .box_button {
-            display: flex;
-            flex-direction: column;
- 
-            button {
-                margin-top: 12px;
-                white-space: nowrap;
-            }
-        }
-    }
-}
