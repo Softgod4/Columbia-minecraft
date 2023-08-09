@@ -8,7 +8,7 @@ interface ModalProps {
   setActive: React.Dispatch<React.SetStateAction<boolean>>;
   productName: string;
   productPrice: number;
-  productDesc: number;
+  productDesc: string;
 }
 
 const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice, productDesc }) => {

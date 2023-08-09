@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 import { useState } from 'react';
 import { useClipboard } from 'use-clipboard-copy'
-import Modal from '../modal/Modal.tsx'
+import Modal from '@/app/Modal/Modal'
 
 import OurServer, { OurServer2 } from '@/components/OurServer';
 
@@ -19,6 +19,7 @@ export default function Market() {
   const clipboard = useClipboard();
   const clipboardCopy2 = useClipboard();
   const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number; desc: string; } | null>(null);
+
     // буфер обмена (скопировать)
 
   const [modalActive, setModalActive] = useState(false) 

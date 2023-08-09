@@ -33,27 +33,7 @@ const TheNavbar = () => {
             </div>
 
             <div className="nav-button">
-                {session?.data ? 
-                    <Link href='/profile' style={{
-
-                        padding: '12px 44px',
-                        background: 'transparent',
-                        color: 'white',
-                        fontWeight: 'bold',
-                        border: '2px solid white',
-                        borderRadius: '4px'
-
-                    }}>{session.data.user?.name}</Link> : <Link href='/' onClick={() => signIn('discord')} style={{
-
-                        padding: '12px 34px',
-                        background: 'white',
-                        color: 'black',
-                        fontWeight: 'bold',
-                        border: '2px solid white',
-                        borderRadius: '4px'
-                        
-                    }}>Авторизация</Link>
-                }
+                <Link href='/market' className='button_a'>Купить проходку</Link>
             </div>
 
             <div className={`nav-burger ${isActive ? 'flex flex-col absolute' : 'hidden'}`}>

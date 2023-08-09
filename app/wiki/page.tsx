@@ -7,7 +7,7 @@ export default function Wiki() {
         <section id='wiki'>
             <div className="flex flex-row justify-between">
 
-                <div className='lg:top-18 h-[calc(100vh-4.5rem)] overflow-y-auto md:px-6 px-2 my-8 [--scrollbar-size:theme(width.3)] lg:sticky md:ml-14 ml-1'>
+                <div className='lg:top-18 h-[calc(100vh-4.5rem)] overflow-y-auto md:px-6 px-2 my-8 [--scrollbar-size:theme(width.3)] lg:sticky md:ml-14 ml-1 hidden md:flex md:flex-col'>
 
                     <div className="scroll-sec flex flex-col">
                         <h2 className='h2_title font-bold mb-2'>Основное</h2>
