@@ -5,42 +5,35 @@ import Link from "next/link";
 const TheFooter = () => {
     
     return (
-        <footer style={{
-            
-        }}>
-            <section id="basement">
+        <footer className='py-7 px-4 bg-greey'>
+            <div className='flex flex-row justify-around items-start w-full'>
 
-                <div className="flex md:flex-row flex-col items-start justify-between">
-                    <a className="font-bold text-xl">Columbia</a>
-                    <div className="basement-item__icon flex flex-row justify-between items-center">
+                <div className='flex flex-col items-start justify-start text-white w-1/6'>
+                    <div className='flex flex-row items-center mb-2'>
+                        <img src='/icon/Vector.png'/>
+                        <h2 className='text-xl font-semibold ml-2'>Columbia</h2>
+                    </div>
+                    <p className='mb-2 text-gray-300'>Copyright © CLS 2023. Все права защищены. Сервера CLS не относятся к Mojang Studio</p>
+                    <p className='text-sm text-gray-300'>Дорошенко Артём Игоревич (инн 632136734840)</p>
+                </div>
 
-                        <a href="https://vk.com/clstorym">
-                            <Image src="/icon/vk.svg" width='32' height='32' alt="" className="cursor-pointer"/> 
-                        </a>
-                        <a href="https://discord.gg/NEGq7UEBU4">
-                            <Image src="/icon/discord.svg" width='32' height='32' alt="" className="ml-2 mr-4 cursor-pointer"/> 
-                        </a>
-                        <a href="https://t.me/columbistg">
-                            <Image src="/icon/telegram.svg" width='22' height='22' alt="" className="cursor-pointer"/>
-                        </a>
+                <div className='flex flex-col items-start justify-center text-white'>
+                    <h2 className='font-semibold mb-2 text-xl'>Документы</h2>
+                    <Link href='/contacts' className='text-base mb-1 font-semibold'>Контакты</Link>
+                    <Link href='/' className='text-base font-semibold'>Политика конфиденциальности</Link>
+                </div>
 
+                <div className='flex flex-col items-start justify-center text-white'>
+                    <h2 className='text-xl font-semibold mb-2'>Свяжитесь с нами</h2>
+                    <a href="mailto: columbis1supp@gmail.com" className='text-gray-300'>columbis1supp@gmail.com</a>
+                    <div className='flex flex-row items-center'>
+                        <img src='/card/mastercard.png'/>
+                        <img src='/card/visa.png' className='mx-2.5'/>
+                        <img src='/card/mir.png'/>
                     </div>
                 </div>
-                <div className="basement-item flex flex-row justify-start">
-                    
-                    <Link href="/contacts" className="text-xl hover:text-blue-400">Контакты</Link>
-                    <Link href="#" className="text-xl hover:text-blue-400">Способы оплаты</Link>
-                    <Link href="#" className="text-xl hover:text-blue-400">Пользовательское соглашение</Link>
-                    
-                </div>
 
-                <div className="flex md:flex-row flex-col items-start">
-                    <p className="md:text-sm text-xl text-gray-600">СМЗ ДОРОШЕНКО АРТЁМ ИГОРЕВИЧ</p>
-                    <p className="text-sm text-gray-600">(ИНН 632136734840)</p>
-                </div>
-
-                <p style={{fontSize: '18px', color: '#E6E6E6'}}>Вся размещенная информация на сайте не является публичной офертой. We are in no way affiliated with or endorsed by Mojang, AB.</p>
-            </section>
+            </div>
         </footer>
     )
 }
