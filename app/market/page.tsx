@@ -31,6 +31,8 @@ export default function Market() {
       { name: 'PLUS 1 МЕСЯЦ', price: 99.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на 1 месяц. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'},
       { name: 'PLUS 3 МЕСЯЦ', price: 267.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на 3 месяца. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'}, 
       { name: 'PLUS 6 МЕСЯЦ', price: 475.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на 6 месяцев. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'},
+      { name: 'PLUS 12 МЕСЯЦ', price: 875.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на 12 месяцев. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)'},
+
       { name: 'РАЗБАН НА СЕРВЕРЕ', price: 599.00, desc: 'Покупая данный товар вы получаете прощение за ваши грехи которые вы сотворили на сервере cls. Покупка данного товара не ограничена, возрату не подлежит.' },
   ];
 
@@ -42,7 +44,7 @@ export default function Market() {
     <>
       <section id="products">
           <div className="container">
-              <div className="products__menu flex flex-row justify-between items-center">
+              <div className="products__menu flex flex-row justify-around items-center">
                   <div className="products__menu__title flex flex-col justify-start">
                       <h2 className="text-white text-3xl text-start mb-2">Наши товары:</h2>
                       <div className="neon-line"></div>
@@ -81,8 +83,8 @@ export default function Market() {
       <section id='line' className='mb-0'></section>
       <section id='server-list'>
         <div className="container">
-            <div className="products__menu__title flex flex-col justify-start mb-20">
-                <h2 className="text-white text-3xl text-start mb-2">Наши сервера:</h2>
+            <div className="products__menu__title flex flex-col justify-center mb-20 items-center">
+                <h2 className="text-white text-3xl text-center mb-2">Наши сервера:</h2>
                 <div className="neon-line"></div>
             </div>
             <div className='grid grid-flow-col gap-4 grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 justify-items-center'>

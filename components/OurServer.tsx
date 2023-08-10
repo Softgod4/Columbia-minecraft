@@ -21,8 +21,8 @@ const OurServer = () => {
 
     return (
         <>
-                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500">
-                    <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
+                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500 border-solid border-2 border-white">
+                    <div className="list_box__title flex md:flex-row flex-col items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
                             <Image src='/logo.svg' alt='' width='32' height='32'></Image>
                             <h2 className='ml-2 text-white text-2xl font-bold'>CL</h2>
@@ -64,11 +64,11 @@ const OurServer2 = () => {
     });
 
     return (
-                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500">
-                    <div className="list_box__title flex flex-row items-center justify-between w-full mb-7">
+                <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500 border-solid border-2 border-white">
+                    <div className="list_box__title flex md:flex-row flex-col items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
                             <Image src='/logo.svg' alt='' width='32' height='32'/>
-                            <h2 className='ml-2 text-white text-2xl font-bold'>CL</h2>
+                            <h2 className='ml-2 text-white text-2xl font-bold'>В будущем</h2>
                         </div>
                         <p className='text-2xl text-white'>Версия: ?.??</p>
                     </div>

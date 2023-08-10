@@ -36,7 +36,7 @@ const TheNavbar = () => {
                 <Link href='/market' className='button_a'>Купить проходку</Link>
             </div>
 
-            <div className={`nav-burger ${isActive ? 'flex flex-col absolute' : 'hidden'}`}>
+            <div className={`nav-burger ${isActive ? 'flex flex-col absolute border-solid border-b-2 border-white' : 'hidden'}`}>
 
                 <Link href='/' className='links-burger'>Главная</Link>
                 <Link href='/market' className='links-burger'>Магазин</Link>
