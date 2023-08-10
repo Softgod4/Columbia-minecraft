@@ -5,7 +5,7 @@ export default function Contacts () {
                 <h2 className="text-white text-5xl mb-2">Контакты</h2>
                 <p className="text-white text-lg text-center">Если у вас возникли вопросы то свяжитесь с нами</p>
 
-                <div className="flex md:flex-row flex-col justify-between mt-7 mb-44">
+                <div className="flex md:flex-row flex-col justify-between mt-7 mb-52">
 
                     <div className="email mx-16 flex flex-col">
                         <h3 className="font-bold text-2xl font-weight-700 text-white whitespace-nowrap text-center">Email Address</h3>

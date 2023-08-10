@@ -54,14 +54,14 @@ export default function Home() {
         <main>
           <div className="chips flex justify-between items-center my-14">
             <img src="/chip1.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
               <h2 className="text-4xl text-white mb-4">Выживайте</h2>
               <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
               <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
               <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
             </article>
@@ -70,7 +70,7 @@ export default function Home() {
 
           <div className="chips flex flex-row justify-between items-center my-14">
             <img src="/chip3.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
               <h2 className="text-4xl text-white mb-4">Участвуйте в сюжете</h2>
               <p className="text-sm/[18px] text-white font-normal">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
             </article>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
               <h2 className="text-4xl text-white mb-4">Управляйте</h2>
               <p className="text-sm/[18px] text-white">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
