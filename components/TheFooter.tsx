@@ -17,7 +17,7 @@ const TheFooter = () => {
                     <p className='text-sm text-gray-300'>Дорошенко Артём Игоревич (инн 632136734840)</p>
                 </div>
 
-                <div className='flex flex-col items-start justify-center text-white md:w-auto w-full'>
+                <div className='flex flex-col items-start justify-center text-white md:w-auto w-full md:my-0 my-12'>
                     <h2 className='font-semibold mb-2 text-xl'>Документы</h2>
                     <Link href='/contacts' className='text-base mb-1 font-semibold'>Контакты</Link>
                     <Link href='/' className='text-base font-semibold'>Политика конфиденциальности</Link>

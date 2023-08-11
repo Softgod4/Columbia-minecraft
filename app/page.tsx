@@ -54,14 +54,14 @@ export default function Home() {
         <main>
           <div className="chips flex justify-between items-center my-14">
             <img src="/chip1.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
               <h2 className="text-4xl text-white mb-4">Выживайте</h2>
               <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
             </article>
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
               <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
               <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
             </article>
@@ -70,17 +70,17 @@ export default function Home() {
 
           <div className="chips flex flex-row justify-between items-center my-14">
             <img src="/chip3.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
-              <h2 className="text-4xl text-white mb-4">Участвуйте в сюжете</h2>
-              <p className="text-sm/[18px] text-white font-normal">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
+              <h2 className="text-4xl text-white mb-4">Управляйте</h2>
+              <p className="text-sm/[18px] text-white font-normal">На сервере присутствуют должности, на которых стоят обычные игроки, выборы происходят через голосования.</p>
             </article>
             
           </div>
 
           <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 border-solid border-2 border-white">
-              <h2 className="text-4xl text-white mb-4">Управляйте</h2>
-              <p className="text-sm/[18px] text-white">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
+            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
+              <h2 className="text-4xl text-white mb-4">Учавствуйте в сюжете</h2>
+              <p className="text-sm/[18px] text-white">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
             </article>
             <img src="/chip4.png" alt="pics" width="593" height="250"/>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
             <Link href='/market' className='text-black py-3 px-4 bg-white rounded-md font-semibold border-solid border border-white'>Купить проходку за 80 &#8381;</Link>
           </div> 
 
-        <div className='responsive p-11 flex flex-col items-start justify-start bg-transparent text-white rounded-xl border-2 border-white border-solid mt-10 md:mt-0 cool-cover transition-all duration-500' style={{ width: '460px'}}>
+        <div className='responsive p-11 flex flex-col items-start justify-start bg-greey text-white rounded-xl mt-10 md:mt-0 cool-cover transition-all duration-500' style={{ width: '460px'}}>
           <h3 className='text-lg font-semibold mb-2'>Сезонная проходка</h3>
           <p className='font-bold text-2xl mb-3'>0 &#8381;</p>
           <ul className='mb-4 list-disc ml-2'>
@@ -170,12 +170,13 @@ export default function Home() {
 
     <section id='NotSure'>
       <div className='container'>
-        <h2 className='h2_title text-center font-semibold mb-2'>Еще не уверены?</h2>
-        <p className='text-center text-xl font-normal text-slate-300 mb-14'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
+        <h2 className='h2_title text-center font-semibold mb-2 md:flex justify-center hidden'>Еще не уверены?</h2>
+        <p className='text-center text-xl font-normal text-slate-300 mb-14 md:flex  hidden'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
 
-        <div className='grid gap-12 grid-cols-3 grid-rows-2'>
+        <div className='md:grid hidden gap-12 grid-cols-3 grid-rows-2'>
 
-          <div className='flex flex-row self-center items-center w-80'>
+        <a href='https://t.me/columbistg'>
+          <div className='flex flex-row self-center items-center w-80 cursor-pointer'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#2aabee'}}>
                <img src='/telegram.svg'/>
             </div>
@@ -184,7 +185,9 @@ export default function Home() {
               <p className='text-sm'>Новости и скриншоты</p>
             </div>
           </div>
+        </a>
 
+        <a href='https://discord.gg/rkS8wzZqMx'>
           <div className='flex flex-row self-center items-center w-80'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#515dd7'}}>
                <img src='/discord.svg'/>
@@ -194,7 +197,9 @@ export default function Home() {
               <p className='text-sm'>Познакомьтесь с сообществом</p>
             </div>
           </div>
+        </a>
 
+          <a>
            <div className='flex flex-row self-center items-center w-80'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                <img src='/icon/wiki.png'/>
@@ -204,7 +209,9 @@ export default function Home() {
               <p className='text-sm'>Подробнее про конкретные фишки</p>
             </div>
           </div>
+          </a>
 
+         <a>
           <div className='flex flex-row self-center items-center w-80'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                <img src='/icon/stats.png'/>
@@ -214,7 +221,9 @@ export default function Home() {
               <p className='text-sm'>Убедитесь что сервер активный</p>
             </div>
           </div>
-
+        </a>
+  
+        <a>
           <div className='flex flex-row self-center items-center w-80'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                <img src='/icon/card.png'/>
@@ -224,7 +233,9 @@ export default function Home() {
               <p className='text-sm'>Посмотрите на игровой мир</p>
             </div>
           </div>
-
+        </a>
+    
+        <a>
           <div className='flex flex-row self-center items-center w-80'>
             <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                <img src='/icon/diamond.png'/>
@@ -234,6 +245,7 @@ export default function Home() {
               <p className='text-sm'>Станьте частью сообщества</p>
             </div>
           </div>
+        </a>
 
         </div>
 
