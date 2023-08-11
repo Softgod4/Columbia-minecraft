@@ -199,7 +199,7 @@ export default function Home() {
             </div>
           </a>
 
-            <a>
+          <a>
             <div className='flex flex-row self-center items-center w-80'>
               <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                 <img src='/icon/wiki.png'/>
