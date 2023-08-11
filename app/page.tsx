@@ -175,77 +175,77 @@ export default function Home() {
 
         <div className='md:grid hidden gap-12 grid-cols-3 grid-rows-2'>
 
-        <a href='https://t.me/columbistg'>
-          <div className='flex flex-row self-center items-center w-80 cursor-pointer'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#2aabee'}}>
-               <img src='/telegram.svg'/>
+          <a href='https://t.me/columbistg'>
+            <div className='flex flex-row self-center items-center w-80 cursor-pointer'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#2aabee'}}>
+                <img src='/telegram.svg'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Сообщество Telegram</p>
+                <p className='text-sm'>Новости и скриншоты</p>
+              </div>
             </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Сообщество Telegram</p>
-              <p className='text-sm'>Новости и скриншоты</p>
-            </div>
-          </div>
-        </a>
-
-        <a href='https://discord.gg/rkS8wzZqMx'>
-          <div className='flex flex-row self-center items-center w-80'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#515dd7'}}>
-               <img src='/discord.svg'/>
-            </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Discord сервер</p>
-              <p className='text-sm'>Познакомьтесь с сообществом</p>
-            </div>
-          </div>
-        </a>
-
-          <a>
-           <div className='flex flex-row self-center items-center w-80'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
-               <img src='/icon/wiki.png'/>
-            </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Вики сервера</p>
-              <p className='text-sm'>Подробнее про конкретные фишки</p>
-            </div>
-          </div>
           </a>
 
-         <a>
-          <div className='flex flex-row self-center items-center w-80'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
-               <img src='/icon/stats.png'/>
+          <a href='https://discord.gg/rkS8wzZqMx'>
+            <div className='flex flex-row self-center items-center w-80'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#515dd7'}}>
+                <img src='/discord.svg'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Discord сервер</p>
+                <p className='text-sm'>Познакомьтесь с сообществом</p>
+              </div>
             </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Статистика онлайна</p>
-              <p className='text-sm'>Убедитесь что сервер активный</p>
+          </a>
+
+            <a>
+            <div className='flex flex-row self-center items-center w-80'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+                <img src='/icon/wiki.png'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Вики сервера</p>
+                <p className='text-sm'>Подробнее про конкретные фишки</p>
+              </div>
             </div>
-          </div>
-        </a>
-  
-        <a>
-          <div className='flex flex-row self-center items-center w-80'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
-               <img src='/icon/card.png'/>
+            </a>
+
+          <a>
+            <div className='flex flex-row self-center items-center w-80'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+                <img src='/icon/stats.png'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Статистика онлайна</p>
+                <p className='text-sm'>Убедитесь что сервер активный</p>
+              </div>
             </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Интерактивная карта</p>
-              <p className='text-sm'>Посмотрите на игровой мир</p>
-            </div>
-          </div>
-        </a>
+          </a>
     
-        <a>
-          <div className='flex flex-row self-center items-center w-80'>
-            <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
-               <img src='/icon/diamond.png'/>
+          <a>
+            <div className='flex flex-row self-center items-center w-80'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+                <img src='/icon/card.png'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Интерактивная карта</p>
+                <p className='text-sm'>Посмотрите на игровой мир</p>
+              </div>
             </div>
-            <div className='flex flex-col items-start ml-4 text-white'>
-              <p className='mb-2 font-semibold text-lg'>Купить проходку</p>
-              <p className='text-sm'>Станьте частью сообщества</p>
+          </a>
+      
+          <a>
+            <div className='flex flex-row self-center items-center w-80'>
+              <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
+                <img src='/icon/diamond.png'/>
+              </div>
+              <div className='flex flex-col items-start ml-4 text-white'>
+                <p className='mb-2 font-semibold text-lg'>Купить проходку</p>
+                <p className='text-sm'>Станьте частью сообщества</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
         </div>
 
