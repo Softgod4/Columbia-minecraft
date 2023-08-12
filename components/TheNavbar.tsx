@@ -33,7 +33,7 @@ const TheNavbar = () => {
             </div>
 
             <div className="nav-button">
-                <Link href='/market' className='button_a'>Купить проходку</Link>
+                <form className="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"><button className='button_a'>Купить проходку</button></form>
             </div>
 
             <div className={`nav-burger ${isActive ? 'flex flex-col absolute border-solid border-b-2 border-white' : 'hidden'}`}>

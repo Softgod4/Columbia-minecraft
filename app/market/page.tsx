@@ -140,7 +140,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
 
                 <div className="flex flex-col mt-7">
 
-                    <form action="">
+                    <div>
                         <p className='text-gray-400 text-sm mb-1'>Никнейм</p>
                         <div className="input-container">
                             <Image src='/Modal/bx-user.svg' width='20' height='20' alt='' className='icon'/>
@@ -160,9 +160,9 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                             <label htmlFor="agree" className='text-white ml-2 text-xl'>Согласен с правилами проекта</label>
                         </div>
                         
-                        <input type="submit" value="Купить" className='button_a mt-5 bold'/>
-                    </form>
-                    
+                        <br/>
+                        <form className="yoomoney-payment-form" action="https://yookassa.ru/integration/simplepay/payment" method="post"><button className='button_a'>Купить</button></form>
+                    </div>
                 </div>
             </div>
 
