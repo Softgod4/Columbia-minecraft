@@ -54,7 +54,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                             <label htmlFor="agree" className='text-white ml-2 text-xl'>Согласен с правилами проекта</label>
                         </div>
                         
-                        <input type="submit" value="Купить" className='button_a mt-5 bold'/>
+                        
                     </form>
                     
                 </div>
