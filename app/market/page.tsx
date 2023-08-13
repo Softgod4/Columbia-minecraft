@@ -161,7 +161,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                         </div>
                         
                         <br/>
-                        <a href="https://yookassa.ru/my/i/ZNfqrEp3nLJP/l"><button className='button_a'>Купить</button></a>
+                        <a href="https://yookassa.ru/my/i/ZNf4TbqIyqVs/l"><button className='button_a'>Купить</button></a>
                     </div>
                 </div>
             </div>
