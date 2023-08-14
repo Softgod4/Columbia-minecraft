@@ -5,6 +5,7 @@ import '../css/market/main.css'
 import '../css/market/media.css'
 import '@/app/css/modal/Modal.css'
 import '@/app/css/modal/media.css'
+import Link from 'next/link'
 
 import Image from 'next/image'
 
@@ -155,13 +156,13 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                         
                         <p className='text-white mt-12 text-xl w-full'>ВАЖНО! всегда внимательно проверяйте введённый вами ник!</p>
 
-                        <div className='mt-12'>
+                        <div className='mt-12 mb-5'>
                             <input type="checkbox" id='agree' className='custom-checkbox'/>
                             <label htmlFor="agree" className='text-white ml-2 text-xl'>Согласен с правилами проекта</label>
                         </div>
                         
                         <br/>
-                        <a href="https://yookassa.ru/my/i/ZNf4TbqIyqVs/l"><button className='button_a'>Купить</button></a>
+                        <Link href='/payment' className='button_a'>Купить</Link>
                     </div>
                 </div>
             </div>

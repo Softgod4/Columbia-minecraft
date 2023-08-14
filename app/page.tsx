@@ -170,9 +170,11 @@ export default function Home() {
 
     <section id='NotSure'>
       <div className='container'>
-        <h2 className='h2_title text-center font-semibold mb-2 md:flex justify-center hidden'>Еще не уверены?</h2>
-        <p className='text-center text-xl font-normal text-slate-300 mb-14 md:flex  hidden'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
-
+        <div className="flex flex-col items-center">
+          <h2 className='h2_title text-center font-semibold mb-2 md:flex justify-center hidden'>Еще не уверены?</h2>
+          <p className='text-center text-xl font-normal text-slate-300 mb-14 md:flex  hidden'>Перейдите по ссылкам, чтобы узнать про наш сервер еще больше</p>
+        </div>
+        
         <div className='md:grid hidden gap-12 grid-cols-3 grid-rows-2'>
 
           <a href='https://t.me/columbistg'>
