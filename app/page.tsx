@@ -96,7 +96,7 @@ export default function Home() {
           {/* аккордеон */}
 
           <Accordion className="w-1/3 text-xl font-bold text-white">
-            <AccordionItem header="	&gt; зачем платить за проходку?" className="">
+            <AccordionItem header="	&gt; Зачем платить за проходку?" className="">
               <span className="text-xl font-normal py-4">
                 <br/>
                   <p className='text-sm'>Платный доступ к серверу позволяет отсеивать большую часть гриферов, 

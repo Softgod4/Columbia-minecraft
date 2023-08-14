@@ -5,8 +5,10 @@ import '../css/market/main.css'
 import '../css/market/media.css'
 import '@/app/css/modal/Modal.css'
 import '@/app/css/modal/media.css'
-import Link from 'next/link'
 
+import { UUID, randomUUID } from 'crypto'
+
+import Link from 'next/link'
 import Image from 'next/image'
 
 import { useState } from 'react';
@@ -119,6 +121,11 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice, productDesc }) => {
+
+    const handleClick = async () => {
+       console.log('hello world')
+    };
+
   return (
     <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
       <div className="modal__content" onClick={e => e.stopPropagation()}>
@@ -162,7 +169,7 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                         </div>
                         
                         <br/>
-                        <button className='button_a'>Купить</button>
+                        <button className='button_a' onClick={handleClick}>Купить</button>
                     </div>
                 </div>
             </div>
