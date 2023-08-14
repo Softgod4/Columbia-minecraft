@@ -156,13 +156,13 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                         
                         <p className='text-white mt-12 text-xl w-full'>ВАЖНО! всегда внимательно проверяйте введённый вами ник!</p>
 
-                        <div className='mt-12 mb-5'>
+                        <div className='mt-12'>
                             <input type="checkbox" id='agree' className='custom-checkbox'/>
                             <label htmlFor="agree" className='text-white ml-2 text-xl'>Согласен с правилами проекта</label>
                         </div>
                         
                         <br/>
-                        <Link href='/payment' className='button_a'>Купить</Link>
+                        <button className='button_a'>Купить</button>
                     </div>
                 </div>
             </div>
