@@ -22,7 +22,7 @@ export default function Market() {
 
   const clipboard = useClipboard();
   const clipboardCopy2 = useClipboard();
-  const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number; desc: string; } | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<{ name: string; price: number; desc: string; link: string} | null>(null);
 
     // буфер обмена (скопировать)
 
@@ -37,6 +37,7 @@ export default function Market() {
       { name: 'PLUS 12 МЕСЯЦ', price: 875.00, desc: 'Данный товар не является проходкой на сервера cls. Покупая данный товар вы получаете некоторые превелегии на 12 месяцев. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)', link: 'https://yookassa.ru/my/i/ZNf270Nk6nft/l'},
 
       { name: 'РАЗБАН НА СЕРВЕРЕ', price: 599.00, desc: 'Покупая данный товар вы получаете прощение за ваши грехи которые вы сотворили на сервере cls. Покупка данного товара не ограничена, возрату не подлежит.', link: 'https://yookassa.ru/my/i/ZNf3JruuffRb/l' },
+      { name: 'Поддержать разраба', price: 1.00, desc: 'Поддерживайте хоть на один рубль. Самые большие донаты будут стоять на доске почета (вики). Возврату не подлежит.', link: '/wiki' },
   ];
 
   const filteredProducts = products.filter(product => 
@@ -104,6 +105,7 @@ export default function Market() {
             productName={selectedProduct.name}
             productPrice={selectedProduct.price}
             productDesc={selectedProduct.desc}
+            productLink={selectedProduct.link}
         />
         )}
 
@@ -118,9 +120,10 @@ interface ModalProps {
   productName: string;
   productPrice: number;
   productDesc: string;
+  productLink: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice, productDesc }) => {
+const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPrice, productDesc, productLink }) => {
 
     const handleClick = async () => {
        console.log('hello world')
@@ -169,7 +172,10 @@ const Modal: React.FC<ModalProps> = ({ active, setActive, productName, productPr
                         </div>
                         
                         <br/>
-                        <button className='button_a' onClick={handleClick}>Купить</button>
+                        <a href={productLink}>
+                            <button className='button_a'>Купить</button>
+                        </a>
+                        
                     </div>
                 </div>
             </div>
