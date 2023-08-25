@@ -19,8 +19,8 @@ const TheNavbar = () => {
     return (
         <nav id="navbar" className="flex flex-row justify-between items-center">
             <div className="nav-logo flex flex-row justify-between items-center cursor-pointer">
-                <Link href='/'><Image src="/logo.svg" alt="logo" width='30' height='30'/></Link>
-                <Link className="text-3xl font-bold text-white" href="/">Columbia</Link>
+                <Link href='/'><Image src="/logo.png" alt="logo" width='30' height='30'/></Link>
+                <Link className="text-3xl font-bold text-white" href="/">SNT</Link>
             </div>
 
             <div className="nav-link">

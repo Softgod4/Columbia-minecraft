@@ -24,13 +24,13 @@ const OurServer = () => {
                 <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500 border-solid border-2 border-white">
                     <div className="list_box__title flex md:flex-row flex-col items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
-                            <Image src='/logo.svg' alt='' width='32' height='32'></Image>
-                            <h2 className='ml-2 text-white text-2xl font-bold'>CL</h2>
+                            <Image src='/logo.png' alt='' width='32' height='32'></Image>
+                            <h2 className='ml-2 text-white text-2xl font-bold'>SNT</h2>
                         </div>
                         <p className='text-2xl text-white'>Версия: 1.20</p>
                     </div>
                     <div className='w-full px-2 py-4 flex flex-row justify-between items-center rounded-xl bg-greey'>
-                        <p className='text-2xl font-bold text-white'>{isCopied1 ? 'Скопировано!' : 'Columbia.ru'}</p>
+                        <p className='text-2xl font-bold text-white'>{isCopied1 ? 'Скопировано!' : 'play.snt-minecraft.ru'}</p>
                         <input ref={clipboard.target} value={'Columbia.ru'} readOnly className='hidden'/>
                         <Image src='/copy.svg' width='32' height='32' alt='' className='cursor-pointer' onClick={clipboard.copy}/>
                     </div>
@@ -67,7 +67,7 @@ const OurServer2 = () => {
                 <div className="list_box py-4 px-6 flex flex-col items-start bg-greey rounded-xl w-5/6 cool-cover transition-all duration-500 border-solid border-2 border-white">
                     <div className="list_box__title flex md:flex-row flex-col items-center justify-between w-full mb-7">
                         <div className="flex flex-row">
-                            <Image src='/logo.svg' alt='' width='32' height='32'/>
+                            <Image src='/logo.png' alt='' width='32' height='32'/>
                             <h2 className='ml-2 text-white text-2xl font-bold'>В будущем</h2>
                         </div>
                         <p className='text-2xl text-white'>Версия: ?.??</p>

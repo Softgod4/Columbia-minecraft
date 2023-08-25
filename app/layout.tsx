@@ -12,7 +12,7 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Columbia minecraft',
+  title: 'SNT-minecraftt',
   description: 'the most vanilla minecraft server',
 }
 

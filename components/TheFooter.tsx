@@ -10,10 +10,10 @@ const TheFooter = () => {
 
                 <div className='flex flex-col items-start justify-start text-white md:w-auto w-full'>
                     <div className='flex flex-row items-center mb-2'>
-                        <img src='/icon/Vector.png'/>
-                        <h2 className='text-xl font-semibold ml-2'>Columbia</h2>
+                        <Image src='/logo.png' width='40' height='40' alt=""/>
+                        <h2 className='text-xl font-semibold ml-2'>SNT</h2>
                     </div>
-                    <p className='mb-2 text-gray-300'>Copyright © CLS 2023. Все права защищены. Сервера CLS не относятся к Mojang Studio</p>
+                    <p className='mb-2 text-gray-300'>Copyright © SNT 2023. Все права защищены. Сервера SNT не относятся к Mojang Studio</p>
                     <p className='text-sm text-gray-300'>Дорошенко Артём Игоревич (инн 632136734840)</p>
                 </div>
 
@@ -25,7 +25,7 @@ const TheFooter = () => {
 
                 <div className='flex flex-col items-start justify-center text-white md:w-auto w-full'>
                     <h2 className='text-xl font-semibold mb-2'>Свяжитесь с нами</h2>
-                    <a href="mailto: columbis1supp@gmail.com" className='text-gray-300'>columbis1supp@gmail.com</a>
+                    <a href="mailto: sntminecraft.supp@gmail.com" className='text-gray-300'>sntminecraft.supp@gmail.com</a>
                     <div className='flex flex-row items-center'>
                         <img src='/card/mastercard.png'/>
                         <img src='/card/visa.png' className='mx-2.5'/>

@@ -31,7 +31,7 @@ export default function Home() {
         <img src="/background.png" alt="" />
         <div className="header-text flex flex-col justify-center items-center">
           <h1>Уникальный сервер Minecraft</h1>
-          <p>CL - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
+          <p>SNT - Выживайте, стройте, участвуйте в сюжетах и отыгрывайте рп.</p>
           <div className="header-text__button flex flex-row items-center">
             <Link className="button_a max-h-10 flex items-center justify-center text-sm" href='/market'>Купить проходку</Link>
             <a className="button_b max-h-10 flex items-center justify-center text-sm" href="#chips">О сервере</a>
@@ -177,7 +177,7 @@ export default function Home() {
         
         <div className='md:grid hidden gap-12 grid-cols-3 grid-rows-2'>
 
-          <a href='https://t.me/columbistg'>
+          <a href='https://t.me/sntminecraft'>
             <div className='flex flex-row self-center items-center w-80 cursor-pointer'>
               <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#2aabee'}}>
                 <img src='/telegram.svg'/>
@@ -189,7 +189,7 @@ export default function Home() {
             </div>
           </a>
 
-          <a href='https://discord.gg/rkS8wzZqMx'>
+          <a href='https://discord.gg/snt-minecraft'>
             <div className='flex flex-row self-center items-center w-80'>
               <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md' style={{background: '#515dd7'}}>
                 <img src='/discord.svg'/>
