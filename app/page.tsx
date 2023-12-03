@@ -46,50 +46,30 @@ export default function Home() {
         </div>
       </div>
     </header>
-
+    
     <section id="chips">
       <div className="container">
-        <h2 className='text-center text-3xl text-white font-normal mb-1'>Сервер - как социальная сеть</h2>
-        <p className='text-center text-sm text-white mb-12'>Игроки заходят на сервер чтобы общаться, найти новую компанию, друзей или девушку</p>
         <main>
-          <div className="chips flex justify-between items-center my-14">
-            <img src="/chip1.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
-              <h2 className="text-4xl text-white mb-4">Выживайте</h2>
-              <p className="text-sm/[18px] text-white font-normal">Основа сервера — это классическое, ванильное выживание с элементами Рп. Которое дополняют соответствующие плагины.</p>
-            </article>
-          </div>
-
-          <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
-              <h2 className="text-4xl text-white mb-4">Торгуйте</h2>
-              <p className="text-sm/[18px] text-white font-normal">На нашем сервере развита экономика. Добывайте ресурсы которые находятся в спросе у игроков а потом продавайте их на нашем рынке, или сделайте свой бизнес который будет приносить вам доход.</p>
-            </article>
-            <img src="/chip2.png" alt="pics" width="593" height="250"/>
-          </div>
-
-          <div className="chips flex flex-row justify-between items-center my-14">
-            <img src="/chip3.png" alt="pics" width="593" height="250"/>
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
-              <h2 className="text-4xl text-white mb-4">Управляйте</h2>
-              <p className="text-sm/[18px] text-white font-normal">На сервере присутствуют должности, на которых стоят обычные игроки, выборы происходят через голосования.</p>
-            </article>
-            
-          </div>
-
-          <div className="chips flex flex-row justify-between items-center my-14">
-            <article className="chips_text w-1/3 p-6 rounded-xl bg-greey cool-cover transition-all duration-500 ">
-              <h2 className="text-4xl text-white mb-4">Учавствуйте в сюжете</h2>
-              <p className="text-sm/[18px] text-white">Наш сервер имеет сюжетную линию, мы разделяем её на четыре части. первое — это начала сюжета, второе — это середина сюжета, третье — это маленькие ивенты, и четвёртое — это конец сюжета.</p>
-            </article>
-            <img src="/chip4.png" alt="pics" width="593" height="250"/>
-          </div>
+          <section className="mb-20">
+            <div className="mb-3 grid place-items-center">
+              <img className="duration-700 ease-in-out scale-100 blur-0 grayscale-0 h-16 w-16" style={{color: 'transperent'}} loading="lazy" src="/heart.png" alt="heart" />
+            </div>
+            <h3 className="font-manrope mb-5 bg-gradient-to-b from-red-400 to-red-600 bg-clip-text pb-2 text-center text-3xl font-extrabold tracking-tight text-transparent lg:mb-6 lg:text-4xl">Комьюнити</h3>
+            <div className="mx-auto max-w-xl px-6"><p className="text-center leading-loose lg:mb-8 lg:text-xl lg:leading-relaxed text-center text-xl font-normal text-slate-300 mb-16">Игроки сервера помогают друг другу, объединяются в команды, строят совместно постройки и фермы, общаются каждый день в нашем Discord сервере и получают невероятный опыт и удовольствие от игры на сервере</p></div>
+          </section>
+          <section className="mb-20">
+            <div className="mb-3 grid place-items-center">
+              <img className="duration-700 ease-in-out scale-100 blur-0 grayscale-0 h-16 w-16" style={{color: 'transperent'}} loading="lazy" src="/globe.png" alt="heart" />
+            </div>
+            <h3 className="font-manrope mb-5 bg-gradient-to-b from-green-400 to-green-600 bg-clip-text pb-2 text-center text-3xl font-extrabold tracking-tight text-transparent lg:mb-6 lg:text-4xl">Система миров</h3>
+            <div className="mx-auto max-w-xl px-6"><p className="text-center leading-loose lg:mb-8 lg:text-xl lg:leading-relaxed text-center text-xl font-normal text-slate-300 mb-16">На сервере используется система миров, позволяющая равномерно распределить нагрузку на сервер — действия в одном мире никак не влияют на нагрузку других миров</p></div>
+          </section>
         </main>
         
       </div>
     </section>
 
-    <section id="accordion" className='bg-greey rounded-xl'>
+    <section id="accordion" className='bg-greey'>
       <div className="container rounded-xl flex flex-row justify-between items-center" style={{height: '500px'}}>
         <img src="/new-accordion.png" alt="pics" className="accordion-img"/>
 
@@ -201,7 +181,7 @@ export default function Home() {
             </div>
           </a>
 
-          <a>
+          <a href='wiki'>
             <div className='flex flex-row self-center items-center w-80'>
               <div className='w-16 h-16 bg-greey flex justify-center items-center rounded-md'>
                 <img src='/icon/wiki.png'/>

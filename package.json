@@ -1,5 +1,5 @@
 {
-  "name": "minecraft-columbia",
+  "name": "sass",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,7 +17,7 @@
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "net": "^1.0.2",
-    "next": "13.4.9",
+    "next": "^14.0.3",
     "next-auth": "^4.22.1",
     "node-fetch": "^3.3.2",
     "rcon": "^1.1.0",
@@ -36,7 +36,14 @@
   },
   "description": "server for minecraft",
   "main": "index.js",
-  "repository": "https://github.com/Softgod4/Columbia-minecraft.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softgod4/Columbia-minecraft.git"
+  },
   "author": "Softgodworld <softgod2005@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Softgod4/Columbia-minecraft/issues"
+  },
+  "homepage": "https://github.com/Softgod4/Columbia-minecraft#readme"
 }

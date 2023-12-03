@@ -1,10 +1,6 @@
 @media (max-width: 900px) {
   .header_background {
     height: 600px;
-    background: #1e2020 !important;
-  }
-  .header_background img {
-    display: none;
   }
   .header_background .header-text {
     text-align: center;

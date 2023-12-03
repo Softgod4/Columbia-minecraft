@@ -30,13 +30,7 @@ export default function Market() {
     // модальное окно
 
   const products = [ 
-      { name: 'SNT Проходка', price: 99.00, desc: 'Это основной сервер, куда можно войти с лицензией, и пиратки. На данном сервере игроки могут создавать свои города, торговать, и участвовать в ивентах самого сервера так и в ивентах самих игроков, и многое другое.', link: 'https://yookassa.ru/my/i/ZNf3ZtuQZufh/l'},
-      { name: 'PLUS 1 МЕСЯЦ', price: 99.00, desc: 'Данный товар не является проходкой на сервера SNT. Покупая данный товар вы получаете некоторые превелегии на 1 месяц. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)', link: 'https://yookassa.ru/my/i/ZNfqrEp3nLJP/l' },
-      { name: 'PLUS 3 МЕСЯЦ', price: 267.00, desc: 'Данный товар не является проходкой на сервера SNT. Покупая данный товар вы получаете некоторые превелегии на 3 месяца. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)', link: 'https://yookassa.ru/my/i/ZNf2XmOHxxwo/l'}, 
-      { name: 'PLUS 6 МЕСЯЦ', price: 475.00, desc: 'Данный товар не является проходкой на сервера SNT. Покупая данный товар вы получаете некоторые превелегии на 6 месяцев. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)', link: 'https://yookassa.ru/my/i/ZNf2p_UXWs1R/l'},
-      { name: 'PLUS 12 МЕСЯЦ', price: 875.00, desc: 'Данный товар не является проходкой на сервера SNT. Покупая данный товар вы получаете некоторые превелегии на 12 месяцев. Список привилегий: • Значек в табе на сервере. • Роль в сервере Discrord. • Вход на заполненный сервер. • Доступ к экслюзивному чату. (возрату не подлежит)', link: 'https://yookassa.ru/my/i/ZNf270Nk6nft/l'},
-
-      { name: 'РАЗБАН НА СЕРВЕРЕ', price: 599.00, desc: 'Покупая данный товар вы получаете прощение за ваши грехи которые вы сотворили на сервере cls. Покупка данного товара не ограничена, возрату не подлежит.', link: 'https://yookassa.ru/my/i/ZNf3JruuffRb/l' },
+      { name: 'SNT Проходка', price: '12', desc: 'Это основной сервер, куда можно войти с лицензией, и пиратки. На данном сервере игроки могут создавать свои города, торговать, и участвовать в ивентах самого сервера так и в ивентах самих игроков, и многое другое.', link: 'https://yookassa.ru/my/i/ZNf3ZtuQZufh/l'},
     //   { name: 'Поддержать разраба', price: 1.00, desc: 'Поддерживайте хоть на один рубль. Самые большие донаты будут стоять на доске почета (вики). Возврату не подлежит.', link: '/wiki' },
   ];
 
@@ -78,9 +72,19 @@ export default function Market() {
                             </div>
                         </div>
                         <p className='mt-4 text-gray-500 font-semibold text-base'>{product.desc}</p>
-                        <button className='button_a text-semibold text-xl mt-auto' onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Подробнее</button>
+                        <button className='button_a text-semibold text-xl mt-auto' onClick={() => {setModalActive(true); setSelectedProduct(product)}}>Купить</button>
                       </div>
                   ))}
+
+                    <div className="products__block__item flex flex-col justify-start items-start p-6 rounded-xl border-solid border-2 border-white h-[450px]">
+                        <div className='flex flex-row justify-start items-start'>
+                            <img src='/logo.png'></img>
+                            <div className='flex flex-col ml-4 w-3/5'>
+                                <h2 className='text-2xl font-bold text-white'>FREE LOCK'D</h2>
+                            </div>
+                        </div>
+                        <p className='mt-4 text-gray-500 font-semibold text-base'>Беслатный доступ с специальному серверу</p>
+                    </div>
               </div>
           </div>
       </section>

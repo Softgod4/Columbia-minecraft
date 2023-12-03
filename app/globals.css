@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic);
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -88,6 +89,7 @@ summary,
 time,
 mark,
 audio,
+.patch,
 video {
   margin: 0;
   padding: 0;
@@ -104,7 +106,7 @@ html {
 }
 
 body {
-  font-family: IBM Plex Sans;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   font-size: 12px;
   background: #111414;
@@ -334,4 +336,8 @@ section:first-child {
 
 .cool-cover:hover {
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Manrope", sans-serif;
 }/*# sourceMappingURL=globals.css.map */

@@ -103,7 +103,10 @@ body {
 #header .header_background {
   width: 100%;
   height: 677px;
-  background: linear-gradient(90deg, rgb(49, 137, 205) 0%, rgb(49, 137, 205) 35%, rgb(31, 124, 196) 100%), lightgray -51.37px 0px/111.44% 100% no-repeat;
+  background: rgb(17,20,20);
+  background: -moz-linear-gradient(0deg, rgba(17,20,20,1) 0%, rgba(33,126,197,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(17,20,20,1) 0%, rgba(33,126,197,1) 100%);
+  background: linear-gradient(0deg, rgba(17,20,20,1) 0%, rgba(33,126,197,1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,10 +125,12 @@ body {
 #header .header_background .header-text h1 {
   color: var(--white);
   font-size: 48px;
+  text-shadow: 0px 0px 35px rgba(15,15,15,0.9);
   font-weight: 700;
 }
 #header .header_background .header-text p {
   color: var(--white, #FFF);
+  text-shadow: 0px 0px 35px rgba(15,15,15,0.9);
   font-size: 19px;
 }
 #header .header_background .header-text__button a {
@@ -142,6 +147,7 @@ body {
   list-style: inside;
   font-size: 16px;
   color: var(--white);
+  text-shadow: 0px 0px 35px rgba(15,15,15,0.9);
   font-weight: 600;
 }
 #header .header_background .header-text__list ul li:not(:first-child) {
